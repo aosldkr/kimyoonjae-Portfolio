@@ -1,0 +1,4271 @@
+@charset "UTF-8";
+@media (min-width: 280px) and (max-width: 376px) {
+  html main, body main {
+    width: 100%;
+  }
+  html main .startpage, body main .startpage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  html main .startpage .main-start-title, body main .startpage .main-start-title {
+    width: 90%;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  html main .startpage .main-start-title .mainT1, body main .startpage .main-start-title .mainT1 {
+    color: #ffffff;
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+    font-family: "Palatino Linotype";
+    color: #ffffff;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 0.5em, 0 0 0.3em;
+    -webkit-animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
+            animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
+  }
+  @-webkit-keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .startpage .main-start-title .mainT2, body main .startpage .main-start-title .mainT2 {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    color: transparent;
+    white-space: normal;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  html main .startpage .main-start-title .mainT2::before, body main .startpage .main-start-title .mainT2::before {
+    content: "안녕하세요 저는 프로트 앤드 & 웹 퍼블리셔블 꿈꾸는 김윤재입니다";
+    position: absolute;
+    top: 133px;
+    left: 57%;
+    /* width: 9%; */
+    /* height: 100%; */
+    color: #ffffff;
+    overflow: hidden;
+    -webkit-animation: typing 5s 1s steps(31) forwards;
+    animation: typing 5s 1s steps(31) forwards;
+    opacity: 0;
+  }
+  @-webkit-keyframes typing {
+    0% {
+      opacity: 1;
+      width: 0%;
+    }
+    50% {
+      opacity: 1;
+      width: 100%;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  @keyframes typing {
+    0% {
+      opacity: 1;
+      width: 0%;
+    }
+    50% {
+      opacity: 1;
+      width: 100%;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  html main .ctx, body main .ctx {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: #000000;
+    width: 100%;
+    overflow: hidden;
+  }
+  html main .aboutPage, body main .aboutPage {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+  }
+  html main .aboutPage .side-titlle, body main .aboutPage .side-titlle {
+    position: absolute;
+    top: 8.5%;
+    right: 0;
+    display: none;
+  }
+  html main .aboutPage .side-titlle h2, body main .aboutPage .side-titlle h2 {
+    font-size: 250px;
+    color: rgba(255, 255, 255, 0.05);
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+  html main .aboutPage .aboutcontent.active::after, body main .aboutPage .aboutcontent.active::after {
+    -webkit-animation: sdf 1s;
+            animation: sdf 1s;
+  }
+  html main .aboutPage .aboutcontent.active .aboutcontent-1, body main .aboutPage .aboutcontent.active .aboutcontent-1 {
+    -webkit-animation: sdf 1s;
+            animation: sdf 1s;
+  }
+  html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
+    width: 100%;
+    margin: 0 auto;
+    opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
+    transition: opacity 2s ease-in-out;
+  }
+  html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .aboutcontent.animate .aboutTitle {
+    -webkit-animation: vv 1s ease-in forwards;
+            animation: vv 1s ease-in forwards;
+  }
+  @-webkit-keyframes vv {
+    0% {
+      opacity: 1;
+      transform: translateX(-600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes vv {
+    0% {
+      opacity: 1;
+      transform: translateX(-600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .aboutcontent.animate .aboutimg {
+    -webkit-animation: vvv 1s 0.5s ease-in forwards;
+            animation: vvv 1s 0.5s ease-in forwards;
+  }
+  @-webkit-keyframes vvv {
+    0% {
+      opacity: 1;
+      transform: translatey(600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes vvv {
+    0% {
+      opacity: 1;
+      transform: translatey(600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .aboutPage .aboutcontent.animate .aboutcontent-2, body main .aboutPage .aboutcontent.animate .aboutcontent-2 {
+    -webkit-animation: fadeIn 2s 1s ease-in forwards;
+            animation: fadeIn 2s 1s ease-in forwards;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .aboutPage .aboutcontent::after, body main .aboutPage .aboutcontent::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1, body main .aboutPage .aboutcontent .aboutcontent-1 {
+    width: 90%;
+    float: none;
+    position: inherit;
+    left: 0;
+    top: -50px;
+    margin-bottom: 80px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle {
+    width: 100%;
+    margin-left: 16px;
+    padding-bottom: 60px;
+    transform: translateX(-600px);
+    opacity: 0;
+    overflow: hidden;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 {
+    padding-top: 200px;
+    font-size: 34px;
+    color: #ffffff;
+    font-family: "Palatino Linotype";
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t1, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t1 {
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t2, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t2 {
+    margin-left: 100px;
+    line-height: 30px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg {
+    width: 100%;
+    margin-left: 16px;
+    display: block;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    transform: translatey(600px);
+    opacity: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 {
+    width: 425px;
+    height: 578px;
+    display: none;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 img, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 img {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img {
+    width: 100%;
+    transform: rotate(15deg) scale(1.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img:hover, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img:hover {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2, body main .aboutPage .aboutcontent .aboutcontent-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    float: right;
+    opacity: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3 {
+    font-size: 28px;
+    font-family: "Palatino Linotype";
+    margin-bottom: 60px;
+    position: relative;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3::after, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3::after {
+    content: "";
+    width: 120px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story {
+    line-height: 22px;
+    margin-bottom: 60px;
+    color: #999;
+    font-size: 14px;
+    text-align: justify;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story strong, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story strong {
+    color: #ffffff;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy {
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: -1px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li {
+    margin-bottom: 20px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li p, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li p {
+    color: #999;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 p, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 p {
+    margin-right: 0px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3 {
+    font-size: 28px;
+    font-family: "Palatino Linotype";
+    margin-bottom: 60px;
+    position: relative;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3::after, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3::after {
+    content: "";
+    width: 100px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text {
+    width: 100%;
+    font-size: 14px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li {
+    display: flex;
+    margin-bottom: 20px;
+    list-style-type: disc !important;
+    list-style-position: inside;
+    list-style: #ffffff;
+    letter-spacing: -1px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before {
+    content: "";
+    background: url("../img/icon/c.png") center center no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin: 3px 9px 0 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1 {
+    margin-right: 20px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s2, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s2 {
+    margin-right: 40px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s3 {
+    margin-right: 20px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s4, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s4 {
+    margin-right: 20px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s5, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s5 {
+    margin-right: 20px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li span, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li span {
+    color: #999;
+    text-align: left;
+  }
+  html main .aboutPage .center-bar, body main .aboutPage .center-bar {
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+  html main .aboutPage .center-bar .bar, body main .aboutPage .center-bar .bar {
+    width: 2px;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 43.6%;
+  }
+  html main .aboutPage .pagetop-bar, body main .aboutPage .pagetop-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .pagetop-bar .bar, body main .aboutPage .pagetop-bar .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+  }
+  html main .aboutPage .page-bar, body main .aboutPage .page-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .page-bar .bar, body main .aboutPage .page-bar .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+    position: absolute;
+    bottom: 0;
+  }
+  html main .workPage, body main .workPage {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    transition: opacity 2s ease-in-out;
+    overflow: hidden;
+    opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
+  }
+  html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workcontent-1 {
+    -webkit-animation: qq 2s ease-in forwards;
+            animation: qq 2s ease-in forwards;
+  }
+  @-webkit-keyframes qq {
+    0% {
+      opacity: 1;
+      transform: translateX(-1000px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes qq {
+    0% {
+      opacity: 1;
+      transform: translateX(-1000px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workcontent-2 {
+    -webkit-animation: qqq 2s ease-in forwards;
+            animation: qqq 2s ease-in forwards;
+  }
+  @-webkit-keyframes qqq {
+    0% {
+      opacity: 1;
+      transform: translatey(900px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes qqq {
+    0% {
+      opacity: 1;
+      transform: translatey(900px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .workPage.animate2 .stargip, body main .workPage.animate2 .stargip {
+    -webkit-animation: qqqq 2s 1.5s ease-in forwards;
+            animation: qqqq 2s 1.5s ease-in forwards;
+  }
+  @-webkit-keyframes qqqq {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes qqqq {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .workPage .stargip, body main .workPage .stargip {
+    width: 45%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    transform: translate(-21px, 401px) rotate(90deg);
+    opacity: 0;
+    border: 0px;
+  }
+  html main .workPage .stargip img, body main .workPage .stargip img {
+    width: 100%;
+  }
+  html main .workPage .side-titlle2, body main .workPage .side-titlle2 {
+    position: absolute;
+    top: 14.5%;
+    right: 0;
+    display: none;
+  }
+  html main .workPage .side-titlle2 h2, body main .workPage .side-titlle2 h2 {
+    font-size: 250px;
+    color: rgba(255, 255, 255, 0.05);
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+  html main .workPage .workcontent, body main .workPage .workcontent {
+    width: 90%;
+    margin: 0 auto;
+    padding: 200px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  html main .workPage .workcontent .workcontent-1, body main .workPage .workcontent .workcontent-1 {
+    width: 100%;
+    overflow: hidden;
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img, body main .workPage .workcontent .workcontent-1 .work-img {
+    width: 100%;
+    display: flex;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure, body main .workPage .workcontent .workcontent-1 .work-img figure {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure img, body main .workPage .workcontent .workcontent-1 .work-img figure img {
+    width: 100%;
+    transform: rotate(15deg) scale(1.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure img:hover, body main .workPage .workcontent .workcontent-1 .work-img figure img:hover {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg, body main .workPage .workcontent .workcontent-1 .btnimg {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg figure, body main .workPage .workcontent .workcontent-1 .btnimg figure {
+    width: 48px;
+    height: 41px;
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg figure img, body main .workPage .workcontent .workcontent-1 .btnimg figure img {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2, body main .workPage .workcontent .workcontent-2 {
+    width: 100%;
+    padding-left: 0;
+    transform: translatey(900px);
+    opacity: 0;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text, body main .workPage .workcontent .workcontent-2 .work-text {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title, body main .workPage .workcontent .workcontent-2 .work-text .work-Title {
+    margin: 80px 0 60px 0;
+    line-height: 34px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 {
+    font-size: 34px;
+    font-family: "Palatino Linotype";
+    display: flex;
+    flex-direction: column;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w1, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w1 {
+    margin-bottom: 5px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w2, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w2 {
+    margin-left: 82px;
+    margin-bottom: 6px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title p, body main .workPage .workcontent .workcontent-2 .work-text .work-Title p {
+    line-height: 19px;
+    color: #999;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: -0.7px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-story, body main .workPage .workcontent .workcontent-2 .work-text .work-story {
+    color: #999;
+    margin-bottom: 60px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill {
+    width: 100%;
+    font-size: 14px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    letter-spacing: -1px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li p, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li p {
+    color: #999;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li span, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li span {
+    width: 100%;
+    color: #999;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn, body main .workPage .workcontent .workcontent-2 .work-text .work-btn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn button, body main .workPage .workcontent .workcontent-2 .work-text .work-btn button {
+    background-color: #494949;
+    border: none;
+    width: 117px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: "Palatino Linotype";
+    color: #ffffff;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn .b1, body main .workPage .workcontent .workcontent-2 .work-text .work-btn .b1 {
+    margin-right: 0px;
+  }
+  html main .workPage .center-bar2, body main .workPage .center-bar2 {
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+  html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
+    width: 2px;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 50.94%;
+  }
+}
+@media (min-width: 375px) and (max-width: 585px) {
+  html main, body main {
+    width: 100%;
+  }
+  html main .startpage, body main .startpage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  html main .startpage .main-start-title, body main .startpage .main-start-title {
+    width: 67%;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  html main .startpage .main-start-title .mainT1, body main .startpage .main-start-title .mainT1 {
+    color: #ffffff;
+    width: 100%;
+    font-size: 34px;
+    text-align: center;
+    font-family: "Palatino Linotype";
+    color: #ffffff;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 0.5em, 0 0 0.3em;
+    -webkit-animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
+            animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
+  }
+  @-webkit-keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .startpage .main-start-title .mainT2, body main .startpage .main-start-title .mainT2 {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    color: transparent;
+    white-space: normal;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  html main .startpage .main-start-title .mainT2::before, body main .startpage .main-start-title .mainT2::before {
+    content: "안녕하세요 저는 프로트 앤드 & 웹 퍼블리셔블 꿈꾸는 김윤재입니다";
+    position: absolute;
+    top: 133px;
+    left: 75%;
+    /* width: 9%; */
+    /* height: 100%; */
+    color: #ffffff;
+    overflow: hidden;
+    -webkit-animation: typing 5s 1s steps(31) forwards;
+    animation: typing 5s 1s steps(31) forwards;
+    opacity: 0;
+  }
+  @-webkit-keyframes typing {
+    0% {
+      opacity: 1;
+      width: 0%;
+    }
+    50% {
+      opacity: 1;
+      width: 100%;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  @keyframes typing {
+    0% {
+      opacity: 1;
+      width: 0%;
+    }
+    50% {
+      opacity: 1;
+      width: 100%;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  html main .ctx, body main .ctx {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: #000000;
+    width: 100%;
+    overflow: hidden;
+  }
+  html main .aboutPage, body main .aboutPage {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+  }
+  html main .aboutPage .side-titlle, body main .aboutPage .side-titlle {
+    position: absolute;
+    top: 8.5%;
+    right: 0;
+    display: none;
+  }
+  html main .aboutPage .side-titlle h2, body main .aboutPage .side-titlle h2 {
+    font-size: 250px;
+    color: rgba(255, 255, 255, 0.05);
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+  html main .aboutPage .aboutcontent.active::after, body main .aboutPage .aboutcontent.active::after {
+    -webkit-animation: sdf 1s;
+            animation: sdf 1s;
+  }
+  html main .aboutPage .aboutcontent.active .aboutcontent-1, body main .aboutPage .aboutcontent.active .aboutcontent-1 {
+    -webkit-animation: sdf 1s;
+            animation: sdf 1s;
+  }
+  html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
+    width: 100%;
+    margin: 0 auto;
+    opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
+    transition: opacity 2s ease-in-out;
+  }
+  html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .aboutcontent.animate .aboutTitle {
+    -webkit-animation: vv 1s ease-in forwards;
+            animation: vv 1s ease-in forwards;
+  }
+  @-webkit-keyframes vv {
+    0% {
+      opacity: 1;
+      transform: translateX(-600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes vv {
+    0% {
+      opacity: 1;
+      transform: translateX(-600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .aboutcontent.animate .aboutimg {
+    -webkit-animation: vvv 1s 0.5s ease-in forwards;
+            animation: vvv 1s 0.5s ease-in forwards;
+  }
+  @-webkit-keyframes vvv {
+    0% {
+      opacity: 1;
+      transform: translatey(600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes vvv {
+    0% {
+      opacity: 1;
+      transform: translatey(600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .aboutPage .aboutcontent.animate .aboutcontent-2, body main .aboutPage .aboutcontent.animate .aboutcontent-2 {
+    -webkit-animation: fadeIn 2s 1s ease-in forwards;
+            animation: fadeIn 2s 1s ease-in forwards;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .aboutPage .aboutcontent::after, body main .aboutPage .aboutcontent::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1, body main .aboutPage .aboutcontent .aboutcontent-1 {
+    width: 90%;
+    float: none;
+    position: inherit;
+    left: 0;
+    top: -50px;
+    margin-bottom: 100px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle {
+    width: 100%;
+    margin-left: 20px;
+    padding-bottom: 60px;
+    transform: translateX(-600px);
+    opacity: 0;
+    overflow: hidden;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 {
+    padding-top: 200px;
+    font-size: 40px;
+    color: #ffffff;
+    font-family: "Palatino Linotype";
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t1, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t1 {
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t2, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t2 {
+    margin-left: 160px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg {
+    width: 100%;
+    margin-left: 20px;
+    display: block;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    transform: translatey(600px);
+    opacity: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 {
+    width: 425px;
+    height: 578px;
+    display: none;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 img, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 img {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img {
+    width: 100%;
+    transform: rotate(15deg) scale(1.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img:hover, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img:hover {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2, body main .aboutPage .aboutcontent .aboutcontent-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    float: right;
+    opacity: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3 {
+    font-size: 30px;
+    font-family: "Palatino Linotype";
+    margin-bottom: 60px;
+    position: relative;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3::after, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3::after {
+    content: "";
+    width: 128px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story {
+    line-height: 30px;
+    margin-bottom: 60px;
+    color: #999;
+    font-size: 14px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story strong, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story strong {
+    color: #ffffff;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy {
+    width: 100%;
+    font-size: 14px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li {
+    margin-bottom: 20px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li p, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li p {
+    color: #999;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 {
+    display: flex;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 p, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 p {
+    margin-right: 40px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3 {
+    font-size: 30px;
+    font-family: "Palatino Linotype";
+    margin-bottom: 60px;
+    position: relative;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3::after, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3::after {
+    content: "";
+    width: 107px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text {
+    width: 100%;
+    font-size: 14px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li {
+    display: flex;
+    margin-bottom: 20px;
+    list-style-type: disc !important;
+    list-style-position: inside;
+    list-style: #ffffff;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before {
+    content: "";
+    background: url("../img/icon/c.png") center center no-repeat;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    margin: 8px 12px 0 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1 {
+    margin-right: 56px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s2, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s2 {
+    margin-right: 74px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s3 {
+    margin-right: 50px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s4, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s4 {
+    margin-right: 54px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s5, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s5 {
+    margin-right: 53px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li span, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li span {
+    color: #999;
+    text-align: left;
+  }
+  html main .aboutPage .center-bar, body main .aboutPage .center-bar {
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+  html main .aboutPage .center-bar .bar, body main .aboutPage .center-bar .bar {
+    width: 2px;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 43.6%;
+  }
+  html main .aboutPage .pagetop-bar, body main .aboutPage .pagetop-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .pagetop-bar .bar, body main .aboutPage .pagetop-bar .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+  }
+  html main .aboutPage .page-bar, body main .aboutPage .page-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .page-bar .bar, body main .aboutPage .page-bar .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+    position: absolute;
+    bottom: 0;
+  }
+  html main .workPage, body main .workPage {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    transition: opacity 2s ease-in-out;
+    overflow: hidden;
+    opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
+  }
+  html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workcontent-1 {
+    -webkit-animation: qq 2s ease-in forwards;
+            animation: qq 2s ease-in forwards;
+  }
+  @-webkit-keyframes qq {
+    0% {
+      opacity: 1;
+      transform: translateX(-1000px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes qq {
+    0% {
+      opacity: 1;
+      transform: translateX(-1000px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workcontent-2 {
+    -webkit-animation: qqq 2s ease-in forwards;
+            animation: qqq 2s ease-in forwards;
+  }
+  @-webkit-keyframes qqq {
+    0% {
+      opacity: 1;
+      transform: translatey(900px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes qqq {
+    0% {
+      opacity: 1;
+      transform: translatey(900px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .workPage.animate2 .stargip, body main .workPage.animate2 .stargip {
+    -webkit-animation: qqqq 2s 1.5s ease-in forwards;
+            animation: qqqq 2s 1.5s ease-in forwards;
+  }
+  @-webkit-keyframes qqqq {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes qqqq {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .workPage .stargip, body main .workPage .stargip {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    transform: translate(-17px, 421px) rotate(90deg);
+    opacity: 0;
+    border: 0px;
+  }
+  html main .workPage .stargip img, body main .workPage .stargip img {
+    width: 100%;
+  }
+  html main .workPage .side-titlle2, body main .workPage .side-titlle2 {
+    position: absolute;
+    top: 14.5%;
+    right: 0;
+    display: none;
+  }
+  html main .workPage .side-titlle2 h2, body main .workPage .side-titlle2 h2 {
+    font-size: 250px;
+    color: rgba(255, 255, 255, 0.05);
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+  html main .workPage .workcontent, body main .workPage .workcontent {
+    width: 90%;
+    margin: 0 auto;
+    padding: 200px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  html main .workPage .workcontent .workcontent-1, body main .workPage .workcontent .workcontent-1 {
+    width: 100%;
+    overflow: hidden;
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img, body main .workPage .workcontent .workcontent-1 .work-img {
+    width: 100%;
+    display: flex;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure, body main .workPage .workcontent .workcontent-1 .work-img figure {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure img, body main .workPage .workcontent .workcontent-1 .work-img figure img {
+    width: 100%;
+    transform: rotate(15deg) scale(1.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure img:hover, body main .workPage .workcontent .workcontent-1 .work-img figure img:hover {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg, body main .workPage .workcontent .workcontent-1 .btnimg {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg figure, body main .workPage .workcontent .workcontent-1 .btnimg figure {
+    width: 53px;
+    height: 45px;
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg figure img, body main .workPage .workcontent .workcontent-1 .btnimg figure img {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2, body main .workPage .workcontent .workcontent-2 {
+    width: 100%;
+    padding-left: 0;
+    transform: translatey(900px);
+    opacity: 0;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text, body main .workPage .workcontent .workcontent-2 .work-text {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title, body main .workPage .workcontent .workcontent-2 .work-text .work-Title {
+    margin: 80px 0 60px 0;
+    line-height: 34px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 {
+    font-size: 40px;
+    font-family: "Palatino Linotype";
+    display: flex;
+    flex-direction: column;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w1, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w1 {
+    margin-bottom: 10px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w2, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w2 {
+    margin-left: 144px;
+    margin-bottom: 6px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title p, body main .workPage .workcontent .workcontent-2 .work-text .work-Title p {
+    line-height: 19px;
+    color: #999;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-story, body main .workPage .workcontent .workcontent-2 .work-text .work-story {
+    color: #999;
+    margin-bottom: 60px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill {
+    width: 100%;
+    font-size: 14px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li p, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li p {
+    color: #999;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li span, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li span {
+    width: 100%;
+    color: #999;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn, body main .workPage .workcontent .workcontent-2 .work-text .work-btn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn button, body main .workPage .workcontent .workcontent-2 .work-text .work-btn button {
+    background-color: #494949;
+    border: none;
+    width: 147px;
+    height: 42px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Palatino Linotype";
+    color: #ffffff;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn .b1, body main .workPage .workcontent .workcontent-2 .work-text .work-btn .b1 {
+    margin-right: 0px;
+  }
+  html main .workPage .center-bar2, body main .workPage .center-bar2 {
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+  html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
+    width: 2px;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 50.94%;
+  }
+}
+@media (min-width: 586px) and (max-width: 766px) {
+  html main, body main {
+    width: 100%;
+  }
+  html main .startpage, body main .startpage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  html main .startpage .main-start-title, body main .startpage .main-start-title {
+    width: 84%;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  html main .startpage .main-start-title .mainT1, body main .startpage .main-start-title .mainT1 {
+    color: #ffffff;
+    width: 100%;
+    font-size: 34px;
+    text-align: center;
+    font-family: "Palatino Linotype";
+    color: #ffffff;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 0.5em, 0 0 0.3em;
+    -webkit-animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
+            animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
+  }
+  @-webkit-keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .startpage .main-start-title .mainT2, body main .startpage .main-start-title .mainT2 {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    color: transparent;
+    white-space: normal;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  html main .startpage .main-start-title .mainT2::before, body main .startpage .main-start-title .mainT2::before {
+    content: "안녕하세요 저는 프로트 앤드 & 웹 퍼블리셔블 꿈꾸는 김윤재입니다";
+    position: absolute;
+    top: 95px;
+    left: 59%;
+    /* width: 9%; */
+    /* height: 100%; */
+    color: #ffffff;
+    overflow: hidden;
+    -webkit-animation: typing 5s 1s steps(31) forwards;
+    animation: typing 5s 1s steps(31) forwards;
+    opacity: 0;
+  }
+  @-webkit-keyframes typing {
+    0% {
+      opacity: 1;
+      width: 0%;
+    }
+    50% {
+      opacity: 1;
+      width: 100%;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  @keyframes typing {
+    0% {
+      opacity: 1;
+      width: 0%;
+    }
+    50% {
+      opacity: 1;
+      width: 100%;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  html main .ctx, body main .ctx {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: #000000;
+    width: 100%;
+    overflow: hidden;
+  }
+  html main .aboutPage, body main .aboutPage {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+  }
+  html main .aboutPage .side-titlle, body main .aboutPage .side-titlle {
+    position: absolute;
+    top: 8.5%;
+    right: 0;
+    display: none;
+  }
+  html main .aboutPage .side-titlle h2, body main .aboutPage .side-titlle h2 {
+    font-size: 250px;
+    color: rgba(255, 255, 255, 0.05);
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+  html main .aboutPage .aboutcontent.active::after, body main .aboutPage .aboutcontent.active::after {
+    -webkit-animation: sdf 1s;
+            animation: sdf 1s;
+  }
+  html main .aboutPage .aboutcontent.active .aboutcontent-1, body main .aboutPage .aboutcontent.active .aboutcontent-1 {
+    -webkit-animation: sdf 1s;
+            animation: sdf 1s;
+  }
+  html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
+    width: 100%;
+    margin: 0 auto;
+    opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
+    transition: opacity 2s ease-in-out;
+  }
+  html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .aboutcontent.animate .aboutTitle {
+    -webkit-animation: vv 1s ease-in forwards;
+            animation: vv 1s ease-in forwards;
+  }
+  @-webkit-keyframes vv {
+    0% {
+      opacity: 1;
+      transform: translateX(-600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes vv {
+    0% {
+      opacity: 1;
+      transform: translateX(-600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .aboutcontent.animate .aboutimg {
+    -webkit-animation: vvv 1s 0.5s ease-in forwards;
+            animation: vvv 1s 0.5s ease-in forwards;
+  }
+  @-webkit-keyframes vvv {
+    0% {
+      opacity: 1;
+      transform: translatey(600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes vvv {
+    0% {
+      opacity: 1;
+      transform: translatey(600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .aboutPage .aboutcontent.animate .aboutcontent-2, body main .aboutPage .aboutcontent.animate .aboutcontent-2 {
+    -webkit-animation: fadeIn 2s 1s ease-in forwards;
+            animation: fadeIn 2s 1s ease-in forwards;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .aboutPage .aboutcontent::after, body main .aboutPage .aboutcontent::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1, body main .aboutPage .aboutcontent .aboutcontent-1 {
+    width: 90%;
+    float: none;
+    position: inherit;
+    left: 0;
+    top: -50px;
+    margin-bottom: 100px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle {
+    width: 100%;
+    margin-left: 30px;
+    padding-bottom: 60px;
+    transform: translateX(-600px);
+    opacity: 0;
+    overflow: hidden;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 {
+    padding-top: 200px;
+    font-size: 40px;
+    color: #ffffff;
+    font-family: "Palatino Linotype";
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t1, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t1 {
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t2, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t2 {
+    margin-left: 160px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg {
+    width: 100%;
+    margin-left: 30px;
+    display: block;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    transform: translatey(600px);
+    opacity: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 {
+    width: 425px;
+    height: 578px;
+    display: none;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 img, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 img {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img {
+    width: 100%;
+    transform: rotate(15deg) scale(1.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img:hover, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img:hover {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2, body main .aboutPage .aboutcontent .aboutcontent-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    float: right;
+    opacity: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3 {
+    font-size: 30px;
+    font-family: "Palatino Linotype";
+    margin-bottom: 60px;
+    position: relative;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3::after, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3::after {
+    content: "";
+    width: 128px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story {
+    line-height: 30px;
+    margin-bottom: 60px;
+    color: #999;
+    font-size: 14px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story strong, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story strong {
+    color: #ffffff;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy {
+    width: 100%;
+    font-size: 14px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li {
+    margin-bottom: 20px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li p, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li p {
+    color: #999;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 {
+    display: flex;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 p, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 p {
+    margin-right: 40px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3 {
+    font-size: 30px;
+    font-family: "Palatino Linotype";
+    margin-bottom: 60px;
+    position: relative;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3::after, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3::after {
+    content: "";
+    width: 107px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text {
+    width: 100%;
+    font-size: 14px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li {
+    display: flex;
+    margin-bottom: 20px;
+    list-style-type: disc !important;
+    list-style-position: inside;
+    list-style: #ffffff;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before {
+    content: "";
+    background: url("../img/icon/c.png") center center no-repeat;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    margin: 8px 12px 0 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1 {
+    margin-right: 55px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s2, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s2 {
+    margin-right: 70px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s3 {
+    margin-right: 52px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s4, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s4 {
+    margin-right: 52px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s5, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s5 {
+    margin-right: 28px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li span, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li span {
+    color: #999;
+    text-align: left;
+  }
+  html main .aboutPage .center-bar, body main .aboutPage .center-bar {
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+  html main .aboutPage .center-bar .bar, body main .aboutPage .center-bar .bar {
+    width: 2px;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 43.6%;
+  }
+  html main .aboutPage .pagetop-bar, body main .aboutPage .pagetop-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .pagetop-bar .bar, body main .aboutPage .pagetop-bar .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+  }
+  html main .aboutPage .page-bar, body main .aboutPage .page-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .page-bar .bar, body main .aboutPage .page-bar .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+    position: absolute;
+    bottom: 0;
+  }
+  html main .workPage, body main .workPage {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    transition: opacity 2s ease-in-out;
+    overflow: hidden;
+    opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
+  }
+  html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workcontent-1 {
+    -webkit-animation: qq 2s ease-in forwards;
+            animation: qq 2s ease-in forwards;
+  }
+  @-webkit-keyframes qq {
+    0% {
+      opacity: 1;
+      transform: translateX(-1000px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes qq {
+    0% {
+      opacity: 1;
+      transform: translateX(-1000px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workcontent-2 {
+    -webkit-animation: qqq 2s ease-in forwards;
+            animation: qqq 2s ease-in forwards;
+  }
+  @-webkit-keyframes qqq {
+    0% {
+      opacity: 1;
+      transform: translatey(900px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes qqq {
+    0% {
+      opacity: 1;
+      transform: translatey(900px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .workPage.animate2 .stargip, body main .workPage.animate2 .stargip {
+    -webkit-animation: qqqq 2s 1.5s ease-in forwards;
+            animation: qqqq 2s 1.5s ease-in forwards;
+  }
+  @-webkit-keyframes qqqq {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes qqqq {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .workPage .stargip, body main .workPage .stargip {
+    width: 43%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    transform: translate(-40px, 571px) rotate(90deg);
+    opacity: 0;
+    border: 0px;
+  }
+  html main .workPage .stargip img, body main .workPage .stargip img {
+    width: 100%;
+  }
+  html main .workPage .side-titlle2, body main .workPage .side-titlle2 {
+    position: absolute;
+    top: 14.5%;
+    right: 0;
+    display: none;
+  }
+  html main .workPage .side-titlle2 h2, body main .workPage .side-titlle2 h2 {
+    font-size: 250px;
+    color: rgba(255, 255, 255, 0.05);
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+  html main .workPage .workcontent, body main .workPage .workcontent {
+    width: 90%;
+    margin: 0 auto;
+    padding: 200px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  html main .workPage .workcontent .workcontent-1, body main .workPage .workcontent .workcontent-1 {
+    width: 100%;
+    overflow: hidden;
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img, body main .workPage .workcontent .workcontent-1 .work-img {
+    width: 100%;
+    display: flex;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure, body main .workPage .workcontent .workcontent-1 .work-img figure {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure img, body main .workPage .workcontent .workcontent-1 .work-img figure img {
+    width: 100%;
+    transform: rotate(15deg) scale(1.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure img:hover, body main .workPage .workcontent .workcontent-1 .work-img figure img:hover {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg, body main .workPage .workcontent .workcontent-1 .btnimg {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg figure, body main .workPage .workcontent .workcontent-1 .btnimg figure {
+    width: 53px;
+    height: 45px;
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg figure img, body main .workPage .workcontent .workcontent-1 .btnimg figure img {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2, body main .workPage .workcontent .workcontent-2 {
+    width: 100%;
+    padding-left: 0;
+    transform: translatey(900px);
+    opacity: 0;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text, body main .workPage .workcontent .workcontent-2 .work-text {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title, body main .workPage .workcontent .workcontent-2 .work-text .work-Title {
+    margin: 80px 0 60px 0;
+    line-height: 34px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 {
+    font-size: 40px;
+    font-family: "Palatino Linotype";
+    display: flex;
+    flex-direction: column;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w1, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w1 {
+    margin-bottom: 10px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w2, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w2 {
+    margin-left: 144px;
+    margin-bottom: 6px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title p, body main .workPage .workcontent .workcontent-2 .work-text .work-Title p {
+    line-height: 19px;
+    color: #999;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-story, body main .workPage .workcontent .workcontent-2 .work-text .work-story {
+    color: #999;
+    margin-bottom: 60px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill {
+    width: 100%;
+    font-size: 14px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li p, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li p {
+    color: #999;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li span, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li span {
+    width: 100%;
+    color: #999;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn, body main .workPage .workcontent .workcontent-2 .work-text .work-btn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: left;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn button, body main .workPage .workcontent .workcontent-2 .work-text .work-btn button {
+    background-color: #494949;
+    border: none;
+    width: 147px;
+    height: 42px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Palatino Linotype";
+    color: #ffffff;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn .b1, body main .workPage .workcontent .workcontent-2 .work-text .work-btn .b1 {
+    margin-right: 118px;
+  }
+  html main .workPage .center-bar2, body main .workPage .center-bar2 {
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+  html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
+    width: 2px;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 50.94%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1400px) {
+  html main, body main {
+    width: 100%;
+  }
+  html main .startpage, body main .startpage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  html main .startpage .main-start-title, body main .startpage .main-start-title {
+    width: 67%;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  html main .startpage .main-start-title .mainT1, body main .startpage .main-start-title .mainT1 {
+    color: #ffffff;
+    width: 100%;
+    font-size: 42px;
+    text-align: center;
+    font-family: "Palatino Linotype";
+    color: #ffffff;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 0.5em, 0 0 0.3em;
+    -webkit-animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
+            animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
+  }
+  @-webkit-keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .startpage .main-start-title .mainT2, body main .startpage .main-start-title .mainT2 {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    color: transparent;
+    white-space: normal;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  html main .startpage .main-start-title .mainT2::before, body main .startpage .main-start-title .mainT2::before {
+    content: "안녕하세요 저는 프로트 앤드 & 웹 퍼블리셔블 꿈꾸는 김윤재입니다";
+    position: absolute;
+    top: 96px;
+    left: 75%;
+    /* width: 9%; */
+    /* height: 100%; */
+    color: #ffffff;
+    overflow: hidden;
+    -webkit-animation: typing 5s 1s steps(31) forwards;
+    animation: typing 5s 1s steps(31) forwards;
+    opacity: 0;
+  }
+  @-webkit-keyframes typing {
+    0% {
+      opacity: 1;
+      width: 0%;
+    }
+    50% {
+      opacity: 1;
+      width: 100%;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  @keyframes typing {
+    0% {
+      opacity: 1;
+      width: 0%;
+    }
+    50% {
+      opacity: 1;
+      width: 100%;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  html main .ctx, body main .ctx {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: #000000;
+    width: 100%;
+    overflow: hidden;
+  }
+  html main .aboutPage, body main .aboutPage {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+  }
+  html main .aboutPage .side-titlle, body main .aboutPage .side-titlle {
+    position: absolute;
+    top: 8.5%;
+    right: 0;
+    display: none;
+  }
+  html main .aboutPage .side-titlle h2, body main .aboutPage .side-titlle h2 {
+    font-size: 250px;
+    color: rgba(255, 255, 255, 0.05);
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+  html main .aboutPage .aboutcontent.active::after, body main .aboutPage .aboutcontent.active::after {
+    -webkit-animation: sdf 1s;
+            animation: sdf 1s;
+  }
+  html main .aboutPage .aboutcontent.active .aboutcontent-1, body main .aboutPage .aboutcontent.active .aboutcontent-1 {
+    -webkit-animation: sdf 1s;
+            animation: sdf 1s;
+  }
+  html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
+    width: 100%;
+    margin: 0 auto;
+    opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
+    transition: opacity 2s ease-in-out;
+  }
+  html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .aboutcontent.animate .aboutTitle {
+    -webkit-animation: vv 1s ease-in forwards;
+            animation: vv 1s ease-in forwards;
+  }
+  @-webkit-keyframes vv {
+    0% {
+      opacity: 1;
+      transform: translateX(-600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes vv {
+    0% {
+      opacity: 1;
+      transform: translateX(-600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .aboutcontent.animate .aboutimg {
+    -webkit-animation: vvv 1s 0.5s ease-in forwards;
+            animation: vvv 1s 0.5s ease-in forwards;
+  }
+  @-webkit-keyframes vvv {
+    0% {
+      opacity: 1;
+      transform: translatey(600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes vvv {
+    0% {
+      opacity: 1;
+      transform: translatey(600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .aboutPage .aboutcontent.animate .aboutcontent-2, body main .aboutPage .aboutcontent.animate .aboutcontent-2 {
+    -webkit-animation: fadeIn 2s 1s ease-in forwards;
+            animation: fadeIn 2s 1s ease-in forwards;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .aboutPage .aboutcontent::after, body main .aboutPage .aboutcontent::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1, body main .aboutPage .aboutcontent .aboutcontent-1 {
+    width: 90%;
+    float: none;
+    position: inherit;
+    left: 0;
+    top: -50px;
+    margin-bottom: 100px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle {
+    width: 100%;
+    margin-left: 40px;
+    padding-bottom: 60px;
+    transform: translateX(-600px);
+    opacity: 0;
+    overflow: hidden;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 {
+    padding-top: 200px;
+    font-size: 44px;
+    color: #ffffff;
+    font-family: "Palatino Linotype";
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t1, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t1 {
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t2, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t2 {
+    margin-left: 140px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg {
+    width: 100%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    transform: translatey(600px);
+    opacity: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 20px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 img, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 img {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img {
+    width: 100%;
+    transform: rotate(15deg) scale(1.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img:hover, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img:hover {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2, body main .aboutPage .aboutcontent .aboutcontent-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+    float: right;
+    opacity: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3 {
+    font-size: 30px;
+    font-family: "Palatino Linotype";
+    margin-bottom: 60px;
+    position: relative;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3::after, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3::after {
+    content: "";
+    width: 128px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story {
+    line-height: 30px;
+    margin-bottom: 60px;
+    color: #999;
+    font-size: 16px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story strong, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story strong {
+    color: #ffffff;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy {
+    width: 100%;
+    font-size: 16px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li {
+    margin-bottom: 20px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li p, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li p {
+    color: #999;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 {
+    display: flex;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 p, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 p {
+    margin-right: 40px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3 {
+    font-size: 30px;
+    font-family: "Palatino Linotype";
+    margin-bottom: 60px;
+    position: relative;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3::after, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3::after {
+    content: "";
+    width: 107px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text {
+    width: 100%;
+    font-size: 14px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li {
+    display: flex;
+    margin-bottom: 20px;
+    list-style-type: disc !important;
+    list-style-position: inside;
+    list-style: #ffffff;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before {
+    content: "";
+    background: url("../img/icon/c.png") center center no-repeat;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    margin: 8px 12px 0 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1 {
+    margin-right: 56px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s2, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s2 {
+    margin-right: 74px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s3 {
+    margin-right: 50px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s4, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s4 {
+    margin-right: 54px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s5, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s5 {
+    margin-right: 29px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li span, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li span {
+    color: #999;
+    text-align: left;
+  }
+  html main .aboutPage .center-bar, body main .aboutPage .center-bar {
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+  html main .aboutPage .center-bar .bar, body main .aboutPage .center-bar .bar {
+    width: 2px;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 43.6%;
+  }
+  html main .aboutPage .pagetop-bar, body main .aboutPage .pagetop-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .pagetop-bar .bar, body main .aboutPage .pagetop-bar .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+  }
+  html main .aboutPage .page-bar, body main .aboutPage .page-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .page-bar .bar, body main .aboutPage .page-bar .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+    position: absolute;
+    bottom: 0;
+  }
+  html main .workPage, body main .workPage {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    transition: opacity 2s ease-in-out;
+    overflow: hidden;
+    opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
+  }
+  html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workcontent-1 {
+    -webkit-animation: qq 2s ease-in forwards;
+            animation: qq 2s ease-in forwards;
+  }
+  @-webkit-keyframes qq {
+    0% {
+      opacity: 1;
+      transform: translateX(-1000px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes qq {
+    0% {
+      opacity: 1;
+      transform: translateX(-1000px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workcontent-2 {
+    -webkit-animation: qqq 2s ease-in forwards;
+            animation: qqq 2s ease-in forwards;
+  }
+  @-webkit-keyframes qqq {
+    0% {
+      opacity: 1;
+      transform: translatey(900px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes qqq {
+    0% {
+      opacity: 1;
+      transform: translatey(900px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .workPage.animate2 .stargip, body main .workPage.animate2 .stargip {
+    -webkit-animation: qqqq 2s 1.5s ease-in forwards;
+            animation: qqqq 2s 1.5s ease-in forwards;
+  }
+  @-webkit-keyframes qqqq {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes qqqq {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .workPage .stargip, body main .workPage .stargip {
+    width: 46%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    transform: translate(-54px, 676px) rotate(90deg);
+    opacity: 0;
+    border: 0px;
+  }
+  html main .workPage .stargip img, body main .workPage .stargip img {
+    width: 100%;
+  }
+  html main .workPage .side-titlle2, body main .workPage .side-titlle2 {
+    position: absolute;
+    top: 14.5%;
+    right: 0;
+    display: none;
+  }
+  html main .workPage .side-titlle2 h2, body main .workPage .side-titlle2 h2 {
+    font-size: 250px;
+    color: rgba(255, 255, 255, 0.05);
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+  html main .workPage .workcontent, body main .workPage .workcontent {
+    width: 90%;
+    margin: 0 auto;
+    padding: 200px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  html main .workPage .workcontent .workcontent-1, body main .workPage .workcontent .workcontent-1 {
+    width: 100%;
+    overflow: hidden;
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img, body main .workPage .workcontent .workcontent-1 .work-img {
+    width: 100%;
+    display: flex;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure, body main .workPage .workcontent .workcontent-1 .work-img figure {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure img, body main .workPage .workcontent .workcontent-1 .work-img figure img {
+    width: 100%;
+    transform: rotate(15deg) scale(1.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure img:hover, body main .workPage .workcontent .workcontent-1 .work-img figure img:hover {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg, body main .workPage .workcontent .workcontent-1 .btnimg {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg figure, body main .workPage .workcontent .workcontent-1 .btnimg figure {
+    width: 60px;
+    height: 51px;
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg figure img, body main .workPage .workcontent .workcontent-1 .btnimg figure img {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2, body main .workPage .workcontent .workcontent-2 {
+    width: 100%;
+    padding-left: 0;
+    transform: translatey(900px);
+    opacity: 0;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text, body main .workPage .workcontent .workcontent-2 .work-text {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title, body main .workPage .workcontent .workcontent-2 .work-text .work-Title {
+    margin: 80px 0 60px 0;
+    line-height: 34px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 {
+    font-size: 44px;
+    font-family: "Palatino Linotype";
+    display: flex;
+    flex-direction: column;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w1, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w1 {
+    margin-bottom: 10px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w2, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w2 {
+    margin-left: 124px;
+    margin-bottom: 6px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title p, body main .workPage .workcontent .workcontent-2 .work-text .work-Title p {
+    line-height: 19px;
+    color: #999;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-story, body main .workPage .workcontent .workcontent-2 .work-text .work-story {
+    color: #999;
+    margin-bottom: 60px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill {
+    width: 100%;
+    font-size: 16px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li p, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li p {
+    color: #999;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li span, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li span {
+    width: 100%;
+    color: #999;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn, body main .workPage .workcontent .workcontent-2 .work-text .work-btn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: start;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn button, body main .workPage .workcontent .workcontent-2 .work-text .work-btn button {
+    background-color: #494949;
+    border: none;
+    width: 147px;
+    height: 42px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Palatino Linotype";
+    color: #ffffff;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn .b1, body main .workPage .workcontent .workcontent-2 .work-text .work-btn .b1 {
+    margin-right: 80px;
+  }
+  html main .workPage .center-bar2, body main .workPage .center-bar2 {
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+  html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
+    width: 2px;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 50.94%;
+  }
+}
+@media (min-width: 1536px) and (max-width: 1877px) {
+  html main, body main {
+    width: 100%;
+  }
+  html main .startpage, body main .startpage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  html main .startpage .main-start-title, body main .startpage .main-start-title {
+    width: 100%;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  html main .startpage .main-start-title .mainT1, body main .startpage .main-start-title .mainT1 {
+    color: #ffffff;
+    width: 100%;
+    font-size: 70px;
+    font-family: "Palatino Linotype";
+    color: #ffffff;
+    position: absolute;
+    top: 46%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 0.5em, 0 0 0.3em;
+    -webkit-animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
+            animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
+  }
+  @-webkit-keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .startpage .main-start-title .mainT2, body main .startpage .main-start-title .mainT2 {
+    color: #ffffff;
+    font-size: 20px;
+    color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  html main .startpage .main-start-title .mainT2::before, body main .startpage .main-start-title .mainT2::before {
+    content: "안녕하세요 저는 프로트 앤드 & 웹 퍼블리셔블 꿈꾸는 김윤재입니다";
+    position: absolute;
+    top: 130px;
+    left: 301px;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    overflow: hidden;
+    -webkit-animation: typing 5s 1s steps(31) forwards;
+            animation: typing 5s 1s steps(31) forwards;
+    opacity: 0;
+  }
+  @-webkit-keyframes typing {
+    0% {
+      opacity: 1;
+      width: 0%;
+    }
+    50% {
+      opacity: 1;
+      width: 100%;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  @keyframes typing {
+    0% {
+      opacity: 1;
+      width: 0%;
+    }
+    50% {
+      opacity: 1;
+      width: 100%;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  html main .ctx, body main .ctx {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: #000000;
+    width: 100%;
+    overflow: hidden;
+  }
+  html main .aboutPage, body main .aboutPage {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+  }
+  html main .aboutPage .side-titlle, body main .aboutPage .side-titlle {
+    position: absolute;
+    top: 12.5%;
+    right: 0;
+  }
+  html main .aboutPage .side-titlle h2, body main .aboutPage .side-titlle h2 {
+    font-size: 210px;
+    color: rgba(255, 255, 255, 0.05);
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+  html main .aboutPage .aboutcontent.active::after, body main .aboutPage .aboutcontent.active::after {
+    -webkit-animation: sdf 1s;
+            animation: sdf 1s;
+  }
+  html main .aboutPage .aboutcontent.active .aboutcontent-1, body main .aboutPage .aboutcontent.active .aboutcontent-1 {
+    -webkit-animation: sdf 1s;
+            animation: sdf 1s;
+  }
+  html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
+    width: 100%;
+    margin: 0 auto;
+    opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
+    transition: opacity 2s ease-in-out;
+  }
+  html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .aboutcontent.animate .aboutTitle {
+    -webkit-animation: vv 1s ease-in forwards;
+            animation: vv 1s ease-in forwards;
+  }
+  @-webkit-keyframes vv {
+    0% {
+      opacity: 1;
+      transform: translateX(-600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes vv {
+    0% {
+      opacity: 1;
+      transform: translateX(-600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .aboutcontent.animate .aboutimg {
+    -webkit-animation: vvv 1s 0.5s ease-in forwards;
+            animation: vvv 1s 0.5s ease-in forwards;
+  }
+  @-webkit-keyframes vvv {
+    0% {
+      opacity: 1;
+      transform: translatey(600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes vvv {
+    0% {
+      opacity: 1;
+      transform: translatey(600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .aboutPage .aboutcontent.animate .aboutcontent-2, body main .aboutPage .aboutcontent.animate .aboutcontent-2 {
+    -webkit-animation: fadeIn 2s 1s ease-in forwards;
+            animation: fadeIn 2s 1s ease-in forwards;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .aboutPage .aboutcontent::after, body main .aboutPage .aboutcontent::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1, body main .aboutPage .aboutcontent .aboutcontent-1 {
+    width: 45%;
+    float: left;
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    top: -50px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle {
+    width: 100%;
+    margin-left: 78px;
+    padding-bottom: 80px;
+    transform: translateX(-600px);
+    opacity: 0;
+    overflow: hidden;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 {
+    padding-top: 232px;
+    font-size: 70px;
+    color: #ffffff;
+    font-family: "Palatino Linotype";
+    display: flex;
+    flex-direction: column;
+    line-height: 53px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t1, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t1 {
+    line-height: 53px;
+    margin-bottom: 20px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t2, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t2 {
+    margin-left: 160px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    transform: translatey(600px);
+    opacity: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 {
+    width: 425px;
+    height: 578px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 img, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 img {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture {
+    width: 406px;
+    height: 519px;
+    overflow: hidden;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img {
+    width: 100%;
+    transform: rotate(15deg) scale(1.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img:hover, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img:hover {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2, body main .aboutPage .aboutcontent .aboutcontent-2 {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 355px 0 0 80px;
+    float: right;
+    opacity: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile {
+    width: 53.2%;
+    margin-bottom: 80px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3 {
+    font-size: 30px;
+    font-family: "Palatino Linotype";
+    margin-bottom: 80px;
+    position: relative;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3::after, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3::after {
+    content: "";
+    width: 128px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story {
+    line-height: 30px;
+    margin-bottom: 60px;
+    color: #999;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story strong, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story strong {
+    color: #ffffff;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li {
+    margin-bottom: 20px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li p, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li p {
+    color: #999;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 {
+    display: flex;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 p, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 p {
+    margin-right: 40px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3 {
+    font-size: 30px;
+    font-family: "Palatino Linotype";
+    margin-bottom: 80px;
+    position: relative;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3::after, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3::after {
+    content: "";
+    width: 107px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li {
+    display: flex;
+    margin-bottom: 20px;
+    list-style-type: disc !important;
+    list-style-position: inside;
+    list-style: #ffffff;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before {
+    content: "";
+    background: url("../img/icon/c.png") center center no-repeat;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    margin: 8px 12px 0 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1 {
+    margin-right: 56px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s2, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s2 {
+    margin-right: 74px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s3 {
+    margin-right: 50px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s4, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s4 {
+    margin-right: 54px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s5, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s5 {
+    margin-right: 26px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li span, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li span {
+    color: #999;
+    text-align: left;
+  }
+  html main .aboutPage .center-bar, body main .aboutPage .center-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .center-bar .bar, body main .aboutPage .center-bar .bar {
+    width: 2px;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 45%;
+  }
+  html main .aboutPage .pagetop-bar, body main .aboutPage .pagetop-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .pagetop-bar .bar, body main .aboutPage .pagetop-bar .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+  }
+  html main .aboutPage .page-bar, body main .aboutPage .page-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .page-bar .bar, body main .aboutPage .page-bar .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+    position: absolute;
+    bottom: 0;
+  }
+  html main .workPage, body main .workPage {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    transition: opacity 2s ease-in-out;
+    overflow: hidden;
+    opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
+  }
+  html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workcontent-1 {
+    -webkit-animation: qq 2s ease-in forwards;
+            animation: qq 2s ease-in forwards;
+  }
+  @-webkit-keyframes qq {
+    0% {
+      opacity: 1;
+      transform: translateX(-1000px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes qq {
+    0% {
+      opacity: 1;
+      transform: translateX(-1000px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workcontent-2 {
+    -webkit-animation: qqq 2s ease-in forwards;
+            animation: qqq 2s ease-in forwards;
+  }
+  @-webkit-keyframes qqq {
+    0% {
+      opacity: 1;
+      transform: translatey(900px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes qqq {
+    0% {
+      opacity: 1;
+      transform: translatey(900px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .workPage.animate2 .stargip, body main .workPage.animate2 .stargip {
+    -webkit-animation: qqqq 2s 1.5s ease-in forwards;
+            animation: qqqq 2s 1.5s ease-in forwards;
+  }
+  @-webkit-keyframes qqqq {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes qqqq {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .workPage .stargip, body main .workPage .stargip {
+    width: 320px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    transform: translate(-230px, 77px) rotate(90deg);
+    opacity: 0;
+  }
+  html main .workPage .stargip img, body main .workPage .stargip img {
+    width: 100%;
+  }
+  html main .workPage .side-titlle2, body main .workPage .side-titlle2 {
+    position: absolute;
+    top: 14.5%;
+    right: 0;
+    line-height: 268px;
+  }
+  html main .workPage .side-titlle2 h2, body main .workPage .side-titlle2 h2 {
+    font-size: 210px;
+    color: rgba(255, 255, 255, 0.05);
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+  html main .workPage .workcontent, body main .workPage .workcontent {
+    width: 90%;
+    margin: 0 auto;
+    padding: 229px 0 140px 0;
+    display: flex;
+    align-items: flex-start;
+    height: 120vh;
+  }
+  html main .workPage .workcontent .workcontent-1, body main .workPage .workcontent .workcontent-1 {
+    width: 51%;
+    overflow: hidden;
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img, body main .workPage .workcontent .workcontent-1 .work-img {
+    width: 100%;
+    display: flex;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure, body main .workPage .workcontent .workcontent-1 .work-img figure {
+    width: 100%;
+    height: 631px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure img, body main .workPage .workcontent .workcontent-1 .work-img figure img {
+    width: 100%;
+    transform: rotate(15deg) scale(1.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure img:hover, body main .workPage .workcontent .workcontent-1 .work-img figure img:hover {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg, body main .workPage .workcontent .workcontent-1 .btnimg {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg figure, body main .workPage .workcontent .workcontent-1 .btnimg figure {
+    width: 70px;
+    height: 60px;
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg figure img, body main .workPage .workcontent .workcontent-1 .btnimg figure img {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2, body main .workPage .workcontent .workcontent-2 {
+    width: 49%;
+    padding-left: 80px;
+    transform: translatey(900px);
+    opacity: 0;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text, body main .workPage .workcontent .workcontent-2 .work-text {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title, body main .workPage .workcontent .workcontent-2 .work-text .work-Title {
+    margin: 52px 0 60px 0;
+    line-height: 66px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 {
+    font-size: 70px;
+    font-family: "Palatino Linotype";
+    display: flex;
+    flex-direction: column;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w2, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w2 {
+    margin-left: 160px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title p, body main .workPage .workcontent .workcontent-2 .work-text .work-Title p {
+    line-height: 25px;
+    color: #999;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-story, body main .workPage .workcontent .workcontent-2 .work-text .work-story {
+    color: #999;
+    margin-bottom: 60px;
+    width: 86%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li p, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li p {
+    color: #999;
+    width: 38%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li span, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li span {
+    width: 62%;
+    color: #999;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn, body main .workPage .workcontent .workcontent-2 .work-text .work-btn {
+    margin-top: 50px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn button, body main .workPage .workcontent .workcontent-2 .work-text .work-btn button {
+    background-color: #494949;
+    border: none;
+    width: 147px;
+    height: 42px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Palatino Linotype";
+    color: #ffffff;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn .b1, body main .workPage .workcontent .workcontent-2 .work-text .work-btn .b1 {
+    margin-right: 60px;
+  }
+  html main .workPage .center-bar2, body main .workPage .center-bar2 {
+    width: 100%;
+    margin: 0;
+  }
+  html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
+    width: 2px;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 50.94%;
+  }
+}
+@media (min-width: 1878px) and (max-width: 1900px) {
+  html main, body main {
+    width: 100%;
+  }
+  html main .startpage, body main .startpage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  html main .startpage .main-start-title, body main .startpage .main-start-title {
+    width: 100%;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  html main .startpage .main-start-title .mainT1, body main .startpage .main-start-title .mainT1 {
+    color: #ffffff;
+    width: 100%;
+    font-size: 70px;
+    font-family: "Palatino Linotype";
+    color: #ffffff;
+    position: absolute;
+    top: 46%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 0.5em, 0 0 0.3em;
+    -webkit-animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
+            animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
+  }
+  @-webkit-keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .startpage .main-start-title .mainT2, body main .startpage .main-start-title .mainT2 {
+    color: #ffffff;
+    font-size: 20px;
+    color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  html main .startpage .main-start-title .mainT2::before, body main .startpage .main-start-title .mainT2::before {
+    content: "안녕하세요 저는 프로트 앤드 & 웹 퍼블리셔블 꿈꾸는 김윤재입니다";
+    position: absolute;
+    top: 130px;
+    left: 301px;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    overflow: hidden;
+    -webkit-animation: typing 5s 1s steps(31) forwards;
+            animation: typing 5s 1s steps(31) forwards;
+    opacity: 0;
+  }
+  @-webkit-keyframes typing {
+    0% {
+      opacity: 1;
+      width: 0%;
+    }
+    50% {
+      opacity: 1;
+      width: 100%;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  @keyframes typing {
+    0% {
+      opacity: 1;
+      width: 0%;
+    }
+    50% {
+      opacity: 1;
+      width: 100%;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  html main .ctx, body main .ctx {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: #000000;
+    width: 100%;
+    overflow: hidden;
+  }
+  html main .aboutPage, body main .aboutPage {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+  }
+  html main .aboutPage .side-titlle, body main .aboutPage .side-titlle {
+    position: absolute;
+    top: 12.5%;
+    right: 0;
+  }
+  html main .aboutPage .side-titlle h2, body main .aboutPage .side-titlle h2 {
+    font-size: 210px;
+    color: rgba(255, 255, 255, 0.05);
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+  html main .aboutPage .aboutcontent.active::after, body main .aboutPage .aboutcontent.active::after {
+    -webkit-animation: sdf 1s;
+            animation: sdf 1s;
+  }
+  html main .aboutPage .aboutcontent.active .aboutcontent-1, body main .aboutPage .aboutcontent.active .aboutcontent-1 {
+    -webkit-animation: sdf 1s;
+            animation: sdf 1s;
+  }
+  html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
+    width: 100%;
+    margin: 0 auto;
+    opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
+    transition: opacity 2s ease-in-out;
+  }
+  html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .aboutcontent.animate .aboutTitle {
+    -webkit-animation: vv 1s ease-in forwards;
+            animation: vv 1s ease-in forwards;
+  }
+  @-webkit-keyframes vv {
+    0% {
+      opacity: 1;
+      transform: translateX(-600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes vv {
+    0% {
+      opacity: 1;
+      transform: translateX(-600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .aboutcontent.animate .aboutimg {
+    -webkit-animation: vvv 1s 0.5s ease-in forwards;
+            animation: vvv 1s 0.5s ease-in forwards;
+  }
+  @-webkit-keyframes vvv {
+    0% {
+      opacity: 1;
+      transform: translatey(600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes vvv {
+    0% {
+      opacity: 1;
+      transform: translatey(600px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .aboutPage .aboutcontent.animate .aboutcontent-2, body main .aboutPage .aboutcontent.animate .aboutcontent-2 {
+    -webkit-animation: fadeIn 2s 1s ease-in forwards;
+            animation: fadeIn 2s 1s ease-in forwards;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .aboutPage .aboutcontent::after, body main .aboutPage .aboutcontent::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1, body main .aboutPage .aboutcontent .aboutcontent-1 {
+    width: 45%;
+    float: left;
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    top: -50px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle {
+    width: 100%;
+    margin-left: 78px;
+    padding-bottom: 80px;
+    transform: translateX(-600px);
+    opacity: 0;
+    overflow: hidden;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 {
+    padding-top: 232px;
+    font-size: 70px;
+    color: #ffffff;
+    font-family: "Palatino Linotype";
+    display: flex;
+    flex-direction: column;
+    line-height: 53px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t1, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t1 {
+    line-height: 53px;
+    margin-bottom: 20px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t2, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutTitle h3 .t2 {
+    margin-left: 160px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    transform: translatey(600px);
+    opacity: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 {
+    width: 425px;
+    height: 578px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 img, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .start1 img {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture {
+    width: 406px;
+    height: 519px;
+    overflow: hidden;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img {
+    width: 100%;
+    transform: rotate(15deg) scale(1.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img:hover, body main .aboutPage .aboutcontent .aboutcontent-1 .aboutimg .myPicture img:hover {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2, body main .aboutPage .aboutcontent .aboutcontent-2 {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 355px 0 0 80px;
+    float: right;
+    opacity: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile {
+    width: 53.2%;
+    margin-bottom: 80px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3 {
+    font-size: 30px;
+    font-family: "Palatino Linotype";
+    margin-bottom: 80px;
+    position: relative;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3::after, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile h3::after {
+    content: "";
+    width: 128px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story {
+    line-height: 30px;
+    margin-bottom: 60px;
+    color: #999;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story strong, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .about-story strong {
+    color: #ffffff;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li {
+    margin-bottom: 20px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li p, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy li p {
+    color: #999;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 {
+    display: flex;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 p, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .profile .privacy .p1 p {
+    margin-right: 40px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3 {
+    font-size: 30px;
+    font-family: "Palatino Linotype";
+    margin-bottom: 80px;
+    position: relative;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3::after, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill h3::after {
+    content: "";
+    width: 107px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text {
+    width: 100%;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li {
+    display: flex;
+    margin-bottom: 20px;
+    list-style-type: disc !important;
+    list-style-position: inside;
+    list-style: #ffffff;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before {
+    content: "";
+    background: url("../img/icon/c.png") center center no-repeat;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    margin: 8px 12px 0 0;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1 {
+    margin-right: 56px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s2, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s2 {
+    margin-right: 74px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s3, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s3 {
+    margin-right: 50px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s4, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s4 {
+    margin-right: 54px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s5, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s5 {
+    margin-right: 26px;
+  }
+  html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li span, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li span {
+    color: #999;
+    text-align: left;
+  }
+  html main .aboutPage .center-bar, body main .aboutPage .center-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .center-bar .bar, body main .aboutPage .center-bar .bar {
+    width: 2px;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 44.2%;
+  }
+  html main .aboutPage .pagetop-bar, body main .aboutPage .pagetop-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .pagetop-bar .bar, body main .aboutPage .pagetop-bar .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+  }
+  html main .aboutPage .page-bar, body main .aboutPage .page-bar {
+    width: 100%;
+    margin: 0;
+  }
+  html main .aboutPage .page-bar .bar, body main .aboutPage .page-bar .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+    position: absolute;
+    bottom: 0;
+  }
+  html main .workPage, body main .workPage {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    transition: opacity 2s ease-in-out;
+    overflow: hidden;
+    opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
+  }
+  html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workcontent-1 {
+    -webkit-animation: qq 2s ease-in forwards;
+            animation: qq 2s ease-in forwards;
+  }
+  @-webkit-keyframes qq {
+    0% {
+      opacity: 1;
+      transform: translateX(-1000px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes qq {
+    0% {
+      opacity: 1;
+      transform: translateX(-1000px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workcontent-2 {
+    -webkit-animation: qqq 2s ease-in forwards;
+            animation: qqq 2s ease-in forwards;
+  }
+  @-webkit-keyframes qqq {
+    0% {
+      opacity: 1;
+      transform: translatey(900px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes qqq {
+    0% {
+      opacity: 1;
+      transform: translatey(900px);
+    }
+    50% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  html main .workPage.animate2 .stargip, body main .workPage.animate2 .stargip {
+    -webkit-animation: qqqq 2s 1.5s ease-in forwards;
+            animation: qqqq 2s 1.5s ease-in forwards;
+  }
+  @-webkit-keyframes qqqq {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes qqqq {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html main .workPage .stargip, body main .workPage .stargip {
+    width: 320px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    transform: translate(-230px, 77px) rotate(90deg);
+    opacity: 0;
+  }
+  html main .workPage .stargip img, body main .workPage .stargip img {
+    width: 100%;
+  }
+  html main .workPage .side-titlle2, body main .workPage .side-titlle2 {
+    position: absolute;
+    top: 14.5%;
+    right: 0;
+    line-height: 268px;
+  }
+  html main .workPage .side-titlle2 h2, body main .workPage .side-titlle2 h2 {
+    font-size: 210px;
+    color: rgba(255, 255, 255, 0.05);
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+  html main .workPage .workcontent, body main .workPage .workcontent {
+    width: 90%;
+    margin: 0 auto;
+    padding: 229px 0 140px 0;
+    display: flex;
+    align-items: flex-start;
+    height: 120vh;
+  }
+  html main .workPage .workcontent .workcontent-1, body main .workPage .workcontent .workcontent-1 {
+    width: 51%;
+    overflow: hidden;
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img, body main .workPage .workcontent .workcontent-1 .work-img {
+    width: 100%;
+    display: flex;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure, body main .workPage .workcontent .workcontent-1 .work-img figure {
+    width: 100%;
+    height: 631px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure img, body main .workPage .workcontent .workcontent-1 .work-img figure img {
+    width: 100%;
+    transform: rotate(15deg) scale(1.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  html main .workPage .workcontent .workcontent-1 .work-img figure img:hover, body main .workPage .workcontent .workcontent-1 .work-img figure img:hover {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg, body main .workPage .workcontent .workcontent-1 .btnimg {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg figure, body main .workPage .workcontent .workcontent-1 .btnimg figure {
+    width: 70px;
+    height: 60px;
+  }
+  html main .workPage .workcontent .workcontent-1 .btnimg figure img, body main .workPage .workcontent .workcontent-1 .btnimg figure img {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2, body main .workPage .workcontent .workcontent-2 {
+    width: 49%;
+    padding-left: 80px;
+    transform: translatey(900px);
+    opacity: 0;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text, body main .workPage .workcontent .workcontent-2 .work-text {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title, body main .workPage .workcontent .workcontent-2 .work-text .work-Title {
+    margin: 52px 0 60px 0;
+    line-height: 66px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 {
+    font-size: 70px;
+    font-family: "Palatino Linotype";
+    display: flex;
+    flex-direction: column;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w2, body main .workPage .workcontent .workcontent-2 .work-text .work-Title h3 .w2 {
+    margin-left: 160px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-Title p, body main .workPage .workcontent .workcontent-2 .work-text .work-Title p {
+    line-height: 25px;
+    color: #999;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-story, body main .workPage .workcontent .workcontent-2 .work-text .work-story {
+    color: #999;
+    margin-bottom: 60px;
+    width: 86%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill {
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li p, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li p {
+    color: #999;
+    width: 38%;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li span, body main .workPage .workcontent .workcontent-2 .work-text .codeing-skill li span {
+    width: 62%;
+    color: #999;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn, body main .workPage .workcontent .workcontent-2 .work-text .work-btn {
+    margin-top: 50px;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn button, body main .workPage .workcontent .workcontent-2 .work-text .work-btn button {
+    background-color: #494949;
+    border: none;
+    width: 147px;
+    height: 42px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Palatino Linotype";
+    color: #ffffff;
+  }
+  html main .workPage .workcontent .workcontent-2 .work-text .work-btn .b1, body main .workPage .workcontent .workcontent-2 .work-text .work-btn .b1 {
+    margin-right: 60px;
+  }
+  html main .workPage .center-bar2, body main .workPage .center-bar2 {
+    width: 100%;
+    margin: 0;
+  }
+  html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
+    width: 2px;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 50.94%;
+  }
+}/*# sourceMappingURL=indexmedia.css.map */

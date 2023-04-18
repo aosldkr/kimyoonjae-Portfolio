@@ -1,0 +1,74 @@
+{
+    "data" :[
+        {
+            "id": 1,
+            "mainTitle":"DAELIM,MUSEUM",
+            "subTitle":"CLONE CODING(2022.11.21~2022.12.09)",
+            "story":"이 웹사이트는 제가 처음으로 진행한 프로젝트이며 클론 코딩 사이트 입니다. 이 사이트는 대림 미술관 홈페이지 입니다. 처음으로 하는 프로젝트 이기에 스크립트 기능이 거의 없는 사이트를 선정했습니다.연습과 완성을 목적으로 하였습니다.부족하지만 이해해 주셔서 감사합니다.",
+            "workimg": "./img/workimg01.jpg",
+
+            "skill":[
+                {"참여도":"100%(개인작업)", "type":"웹(1920) + 반응형(375)"},
+                {"Page":"Main + sub1(Vist)", "Tool":"PIGMA , HTML , SASS , JAVASCRIPT"},
+                {"Process":"Header Scroll Event"}
+            ],
+        
+            "WEBVIEW":"https://aosldkr.github.io/Dmuseum/",
+            "GITHUB":"https://github.com/aosldkr/Dmuseum.git"
+           
+        },
+
+        {
+            "id": 2,
+            "mainTitle":"LE - LABO,STORE",
+            "subTitle":"RENEWAL CODING(2022.12.21~2022.01.13)",
+            "story":"이번 프로젝트 는 팀프로젝트로서 웹사이트를 리뉴얼 하기로 결정했습니다. 선택한 웹사이트는 르라보 공식 홈페이지고  모던하고 심플한 느낌을 주는 사이트 입니다.하지만 요즘 트렌드에는 맞지 않는다고 생각하여 좀더 고급스러우면서 요새 트랜드에 맞는 느낌으로 바꾸었보려 노력했습니다.",
+            "workimg": "./img/workimg02.jpg",
+
+            "skill":[
+                {"참여도":"25%(팀작업)","type":"웹(1920) + 반응형(375,767)"},
+                {"Page":"Ingredients page","Tool":"PIGMA , HTML , SASS "}             
+            ],
+ 
+            "WEBVIEW":"https://aosldkr.github.io/rerabo-project/",
+            "GITHUB":"https://github.com/aosldkr/rerabo-project.git"
+            
+        },
+
+        {
+            "id": 3,
+            "mainTitle":"MOVIE,WEBPAGE",
+            "subTitle":"CREATE NEW WEB(2022.01.26~2022.02.13)",
+            "story":"이번 프로젝트는 api통신을 사용해서 데이터를 가져와 만드는 것입니다. 그래서저는 영화 api를 가지고 와서 영화를 소개해주고 검색을 통해서 자신이 원하는 영화에 대한 정보를 알수있는 사이트를 만들었습니다. ",
+            "workimg": "./img/workimg03.jpg",
+
+            "skill":[
+                {"참여도":"100%(개인작업)","type":"웹(1920)"},
+                {"Page":"Main page","Tool":"PIGMA , HTML , SASS, JAVASCRIPT"},   
+                {"Process":"API 통신, Click Event"}
+            ],
+ 
+            "WEBVIEW":"https://aosldkr.github.io/moive-app/",
+            "GITHUB":"https://github.com/aosldkr/moive-app.git"
+            
+        },
+
+        {
+            "id": 4,
+            "mainTitle":"CANVAS,WEBPAGE",
+            "subTitle":"CREATE NEW WEB(2022.02.23~2022.03.12)",
+            "story":"이번 프로젝트는 명화 검색 및 감상 홈페이지로 사람들이 어는 정도 알수 있는 명화들을 선택하여 제이슨에 데이터를 담아서 뿌려주어 습니다. 클릭을 통해 명화에 대한 세부 내용을 알수 있게 했습니다. 그리고 디자인은 최대한 세런되면서 깔끔한 느낌을 주도록 디자인 하였습니다.",
+            "workimg": "./img/workimg04.jpg",
+
+            "skill":[
+                {"참여도":"100%(개인작업)","type":"웹(1920) + 반응형(375)"},
+                {"Page":"Main + sub*5","Tool":"PIGMA , HTML , SASS, JAVASCRIPT, JSON"},
+                {"Process":"Click Event , SWIPE , GRID "}
+            ],
+ 
+            "WEBVIEW":"https://aosldkr.github.io/pictrue/",
+            "GITHUB":"https://github.com/aosldkr/pictrue.git"
+            
+        }
+    ]
+}
