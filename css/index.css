@@ -27,17 +27,7 @@ html main .startpage .main-start-title .mainT1, body main .startpage .main-start
   left: 72%;
   transform: translate(-50%, -50%);
   text-shadow: 0 0 0.5em, 0 0 0.3em;
-  -webkit-animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-          animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-}
-@-webkit-keyframes fadein {
-  /* 효과를 동작시간 동안 0 ~ 1까지 */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
 }
 @keyframes fadein {
   /* 효과를 동작시간 동안 0 ~ 1까지 */
@@ -45,14 +35,6 @@ html main .startpage .main-start-title .mainT1, body main .startpage .main-start
     opacity: 0;
   }
   to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes blink-effect {
-  50% {
-    opacity: 0;
-  }
-  100% {
     opacity: 1;
   }
 }
@@ -81,23 +63,8 @@ html main .startpage .main-start-title .mainT2::before, body main .startpage .ma
   height: 100%;
   color: #ffffff;
   overflow: hidden;
-  -webkit-animation: typing 5s 1s steps(31) forwards;
-          animation: typing 5s 1s steps(31) forwards;
+  animation: typing 5s 1s steps(31) forwards;
   opacity: 0;
-}
-@-webkit-keyframes typing {
-  0% {
-    opacity: 1;
-    width: 0%;
-  }
-  50% {
-    opacity: 1;
-    width: 100%;
-  }
-  100% {
-    opacity: 1;
-    width: 100%;
-  }
 }
 @keyframes typing {
   0% {
@@ -135,16 +102,13 @@ html main .aboutPage .side-titlle, body main .aboutPage .side-titlle {
 html main .aboutPage .side-titlle h2, body main .aboutPage .side-titlle h2 {
   font-size: 250px;
   color: rgba(255, 255, 255, 0.05);
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
 }
 html main .aboutPage .aboutcontent.active::after, body main .aboutPage .aboutcontent.active::after {
-  -webkit-animation: sdf 1s;
-          animation: sdf 1s;
+  animation: sdf 1s;
 }
 html main .aboutPage .aboutcontent.active .aboutcontent-1, body main .aboutPage .aboutcontent.active .aboutcontent-1 {
-  -webkit-animation: sdf 1s;
-          animation: sdf 1s;
+  animation: sdf 1s;
 }
 html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
   width: 100%;
@@ -153,22 +117,7 @@ html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
   transition: opacity 2s ease-in-out;
 }
 html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .aboutcontent.animate .aboutTitle {
-  -webkit-animation: vv 1s ease-in forwards;
-          animation: vv 1s ease-in forwards;
-}
-@-webkit-keyframes vv {
-  0% {
-    opacity: 1;
-    transform: translateX(-600px);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  animation: vv 1s ease-in forwards;
 }
 @keyframes vv {
   0% {
@@ -185,22 +134,7 @@ html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .ab
   }
 }
 html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .aboutcontent.animate .aboutimg {
-  -webkit-animation: vvv 1s 0.5s ease-in forwards;
-          animation: vvv 1s 0.5s ease-in forwards;
-}
-@-webkit-keyframes vvv {
-  0% {
-    opacity: 1;
-    transform: translatey(600px);
-  }
-  50% {
-    opacity: 1;
-    transform: translatey(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  animation: vvv 1s 0.5s ease-in forwards;
 }
 @keyframes vvv {
   0% {
@@ -217,16 +151,7 @@ html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .abou
   }
 }
 html main .aboutPage .aboutcontent.animate .aboutcontent-2, body main .aboutPage .aboutcontent.animate .aboutcontent-2 {
-  -webkit-animation: fadeIn 2s 1s ease-in forwards;
-          animation: fadeIn 2s 1s ease-in forwards;
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fadeIn 2s 1s ease-in forwards;
 }
 @keyframes fadeIn {
   0% {
@@ -244,7 +169,6 @@ html main .aboutPage .aboutcontent::after, body main .aboutPage .aboutcontent::a
 html main .aboutPage .aboutcontent .aboutcontent-1, body main .aboutPage .aboutcontent .aboutcontent-1 {
   width: 45%;
   float: left;
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   top: -50px;
@@ -454,22 +378,7 @@ html main .workPage, body main .workPage {
   opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
 }
 html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workcontent-1 {
-  -webkit-animation: qq 2s ease-in forwards;
-          animation: qq 2s ease-in forwards;
-}
-@-webkit-keyframes qq {
-  0% {
-    opacity: 1;
-    transform: translateX(-1000px);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  animation: qq 2s ease-in forwards;
 }
 @keyframes qq {
   0% {
@@ -486,22 +395,7 @@ html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workc
   }
 }
 html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workcontent-2 {
-  -webkit-animation: qqq 2s ease-in forwards;
-          animation: qqq 2s ease-in forwards;
-}
-@-webkit-keyframes qqq {
-  0% {
-    opacity: 1;
-    transform: translatey(900px);
-  }
-  50% {
-    opacity: 1;
-    transform: translatey(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  animation: qqq 2s ease-in forwards;
 }
 @keyframes qqq {
   0% {
@@ -518,19 +412,7 @@ html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workc
   }
 }
 html main .workPage.animate2 .stargip, body main .workPage.animate2 .stargip {
-  -webkit-animation: qqqq 2s 1.5s ease-in forwards;
-          animation: qqqq 2s 1.5s ease-in forwards;
-}
-@-webkit-keyframes qqqq {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: qqqq 2s 1.5s ease-in forwards;
 }
 @keyframes qqqq {
   0% {
@@ -564,8 +446,7 @@ html main .workPage .side-titlle2, body main .workPage .side-titlle2 {
 html main .workPage .side-titlle2 h2, body main .workPage .side-titlle2 h2 {
   font-size: 250px;
   color: rgba(255, 255, 255, 0.05);
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
 }
 html main .workPage .workcontent, body main .workPage .workcontent {
   width: 90%;
@@ -720,17 +601,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0 0 0.5em, 0 0 0.3em;
-    -webkit-animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-            animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-  }
-  @-webkit-keyframes fadein {
-    /* 효과를 동작시간 동안 0 ~ 1까지 */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
   }
   @keyframes fadein {
     /* 효과를 동작시간 동안 0 ~ 1까지 */
@@ -738,14 +609,6 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
       opacity: 0;
     }
     to {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes blink-effect {
-    50% {
-      opacity: 0;
-    }
-    100% {
       opacity: 1;
     }
   }
@@ -776,23 +639,8 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     /* height: 100%; */
     color: #ffffff;
     overflow: hidden;
-    -webkit-animation: typing 5s 1s steps(31) forwards;
     animation: typing 5s 1s steps(31) forwards;
     opacity: 0;
-  }
-  @-webkit-keyframes typing {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
   }
   @keyframes typing {
     0% {
@@ -831,16 +679,13 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .aboutPage .side-titlle h2, body main .aboutPage .side-titlle h2 {
     font-size: 250px;
     color: rgba(255, 255, 255, 0.05);
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
   }
   html main .aboutPage .aboutcontent.active::after, body main .aboutPage .aboutcontent.active::after {
-    -webkit-animation: sdf 1s;
-            animation: sdf 1s;
+    animation: sdf 1s;
   }
   html main .aboutPage .aboutcontent.active .aboutcontent-1, body main .aboutPage .aboutcontent.active .aboutcontent-1 {
-    -webkit-animation: sdf 1s;
-            animation: sdf 1s;
+    animation: sdf 1s;
   }
   html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
     width: 100%;
@@ -849,22 +694,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     transition: opacity 2s ease-in-out;
   }
   html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .aboutcontent.animate .aboutTitle {
-    -webkit-animation: vv 1s ease-in forwards;
-            animation: vv 1s ease-in forwards;
-  }
-  @-webkit-keyframes vv {
-    0% {
-      opacity: 1;
-      transform: translateX(-600px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: vv 1s ease-in forwards;
   }
   @keyframes vv {
     0% {
@@ -881,22 +711,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .aboutcontent.animate .aboutimg {
-    -webkit-animation: vvv 1s 0.5s ease-in forwards;
-            animation: vvv 1s 0.5s ease-in forwards;
-  }
-  @-webkit-keyframes vvv {
-    0% {
-      opacity: 1;
-      transform: translatey(600px);
-    }
-    50% {
-      opacity: 1;
-      transform: translatey(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: vvv 1s 0.5s ease-in forwards;
   }
   @keyframes vvv {
     0% {
@@ -913,16 +728,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .aboutPage .aboutcontent.animate .aboutcontent-2, body main .aboutPage .aboutcontent.animate .aboutcontent-2 {
-    -webkit-animation: fadeIn 2s 1s ease-in forwards;
-            animation: fadeIn 2s 1s ease-in forwards;
-  }
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: fadeIn 2s 1s ease-in forwards;
   }
   @keyframes fadeIn {
     0% {
@@ -1092,11 +898,11 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   }
   html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li::before {
     content: "";
-    background: url("../img/icon/c.png") center center no-repeat;
-    width: 16px;
-    height: 16px;
+    background: url(../img/icon/c.png) center center no-repeat;
+    width: 12px;
+    height: 12px;
     display: inline-block;
-    margin: 3px 9px 0 0;
+    margin: 5px 10px 0 0;
   }
   html main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1, body main .aboutPage .aboutcontent .aboutcontent-2 .about-text .skill .skill-text li .s1 {
     margin-right: 20px;
@@ -1161,22 +967,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
   }
   html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workcontent-1 {
-    -webkit-animation: qq 2s ease-in forwards;
-            animation: qq 2s ease-in forwards;
-  }
-  @-webkit-keyframes qq {
-    0% {
-      opacity: 1;
-      transform: translateX(-1000px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: qq 2s ease-in forwards;
   }
   @keyframes qq {
     0% {
@@ -1193,22 +984,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workcontent-2 {
-    -webkit-animation: qqq 2s ease-in forwards;
-            animation: qqq 2s ease-in forwards;
-  }
-  @-webkit-keyframes qqq {
-    0% {
-      opacity: 1;
-      transform: translatey(900px);
-    }
-    50% {
-      opacity: 1;
-      transform: translatey(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: qqq 2s ease-in forwards;
   }
   @keyframes qqq {
     0% {
@@ -1225,19 +1001,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .workPage.animate2 .stargip, body main .workPage.animate2 .stargip {
-    -webkit-animation: qqqq 2s 1.5s ease-in forwards;
-            animation: qqqq 2s 1.5s ease-in forwards;
-  }
-  @-webkit-keyframes qqqq {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: qqqq 2s 1.5s ease-in forwards;
   }
   @keyframes qqqq {
     0% {
@@ -1273,8 +1037,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .workPage .side-titlle2 h2, body main .workPage .side-titlle2 h2 {
     font-size: 250px;
     color: rgba(255, 255, 255, 0.05);
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
   }
   html main .workPage .workcontent, body main .workPage .workcontent {
     width: 90%;
@@ -1444,17 +1207,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0 0 0.5em, 0 0 0.3em;
-    -webkit-animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-            animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-  }
-  @-webkit-keyframes fadein {
-    /* 효과를 동작시간 동안 0 ~ 1까지 */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
   }
   @keyframes fadein {
     /* 효과를 동작시간 동안 0 ~ 1까지 */
@@ -1462,14 +1215,6 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
       opacity: 0;
     }
     to {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes blink-effect {
-    50% {
-      opacity: 0;
-    }
-    100% {
       opacity: 1;
     }
   }
@@ -1500,23 +1245,8 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     /* height: 100%; */
     color: #ffffff;
     overflow: hidden;
-    -webkit-animation: typing 5s 1s steps(31) forwards;
     animation: typing 5s 1s steps(31) forwards;
     opacity: 0;
-  }
-  @-webkit-keyframes typing {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
   }
   @keyframes typing {
     0% {
@@ -1555,16 +1285,13 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .aboutPage .side-titlle h2, body main .aboutPage .side-titlle h2 {
     font-size: 250px;
     color: rgba(255, 255, 255, 0.05);
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
   }
   html main .aboutPage .aboutcontent.active::after, body main .aboutPage .aboutcontent.active::after {
-    -webkit-animation: sdf 1s;
-            animation: sdf 1s;
+    animation: sdf 1s;
   }
   html main .aboutPage .aboutcontent.active .aboutcontent-1, body main .aboutPage .aboutcontent.active .aboutcontent-1 {
-    -webkit-animation: sdf 1s;
-            animation: sdf 1s;
+    animation: sdf 1s;
   }
   html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
     width: 100%;
@@ -1573,22 +1300,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     transition: opacity 2s ease-in-out;
   }
   html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .aboutcontent.animate .aboutTitle {
-    -webkit-animation: vv 1s ease-in forwards;
-            animation: vv 1s ease-in forwards;
-  }
-  @-webkit-keyframes vv {
-    0% {
-      opacity: 1;
-      transform: translateX(-600px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: vv 1s ease-in forwards;
   }
   @keyframes vv {
     0% {
@@ -1605,22 +1317,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .aboutcontent.animate .aboutimg {
-    -webkit-animation: vvv 1s 0.5s ease-in forwards;
-            animation: vvv 1s 0.5s ease-in forwards;
-  }
-  @-webkit-keyframes vvv {
-    0% {
-      opacity: 1;
-      transform: translatey(600px);
-    }
-    50% {
-      opacity: 1;
-      transform: translatey(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: vvv 1s 0.5s ease-in forwards;
   }
   @keyframes vvv {
     0% {
@@ -1637,16 +1334,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .aboutPage .aboutcontent.animate .aboutcontent-2, body main .aboutPage .aboutcontent.animate .aboutcontent-2 {
-    -webkit-animation: fadeIn 2s 1s ease-in forwards;
-            animation: fadeIn 2s 1s ease-in forwards;
-  }
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: fadeIn 2s 1s ease-in forwards;
   }
   @keyframes fadeIn {
     0% {
@@ -1880,22 +1568,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
   }
   html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workcontent-1 {
-    -webkit-animation: qq 2s ease-in forwards;
-            animation: qq 2s ease-in forwards;
-  }
-  @-webkit-keyframes qq {
-    0% {
-      opacity: 1;
-      transform: translateX(-1000px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: qq 2s ease-in forwards;
   }
   @keyframes qq {
     0% {
@@ -1912,22 +1585,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workcontent-2 {
-    -webkit-animation: qqq 2s ease-in forwards;
-            animation: qqq 2s ease-in forwards;
-  }
-  @-webkit-keyframes qqq {
-    0% {
-      opacity: 1;
-      transform: translatey(900px);
-    }
-    50% {
-      opacity: 1;
-      transform: translatey(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: qqq 2s ease-in forwards;
   }
   @keyframes qqq {
     0% {
@@ -1944,19 +1602,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .workPage.animate2 .stargip, body main .workPage.animate2 .stargip {
-    -webkit-animation: qqqq 2s 1.5s ease-in forwards;
-            animation: qqqq 2s 1.5s ease-in forwards;
-  }
-  @-webkit-keyframes qqqq {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: qqqq 2s 1.5s ease-in forwards;
   }
   @keyframes qqqq {
     0% {
@@ -1992,8 +1638,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .workPage .side-titlle2 h2, body main .workPage .side-titlle2 h2 {
     font-size: 250px;
     color: rgba(255, 255, 255, 0.05);
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
   }
   html main .workPage .workcontent, body main .workPage .workcontent {
     width: 90%;
@@ -2161,17 +1806,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0 0 0.5em, 0 0 0.3em;
-    -webkit-animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-            animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-  }
-  @-webkit-keyframes fadein {
-    /* 효과를 동작시간 동안 0 ~ 1까지 */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
   }
   @keyframes fadein {
     /* 효과를 동작시간 동안 0 ~ 1까지 */
@@ -2179,14 +1814,6 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
       opacity: 0;
     }
     to {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes blink-effect {
-    50% {
-      opacity: 0;
-    }
-    100% {
       opacity: 1;
     }
   }
@@ -2217,23 +1844,8 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     /* height: 100%; */
     color: #ffffff;
     overflow: hidden;
-    -webkit-animation: typing 5s 1s steps(31) forwards;
     animation: typing 5s 1s steps(31) forwards;
     opacity: 0;
-  }
-  @-webkit-keyframes typing {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
   }
   @keyframes typing {
     0% {
@@ -2272,16 +1884,13 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .aboutPage .side-titlle h2, body main .aboutPage .side-titlle h2 {
     font-size: 250px;
     color: rgba(255, 255, 255, 0.05);
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
   }
   html main .aboutPage .aboutcontent.active::after, body main .aboutPage .aboutcontent.active::after {
-    -webkit-animation: sdf 1s;
-            animation: sdf 1s;
+    animation: sdf 1s;
   }
   html main .aboutPage .aboutcontent.active .aboutcontent-1, body main .aboutPage .aboutcontent.active .aboutcontent-1 {
-    -webkit-animation: sdf 1s;
-            animation: sdf 1s;
+    animation: sdf 1s;
   }
   html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
     width: 100%;
@@ -2290,22 +1899,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     transition: opacity 2s ease-in-out;
   }
   html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .aboutcontent.animate .aboutTitle {
-    -webkit-animation: vv 1s ease-in forwards;
-            animation: vv 1s ease-in forwards;
-  }
-  @-webkit-keyframes vv {
-    0% {
-      opacity: 1;
-      transform: translateX(-600px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: vv 1s ease-in forwards;
   }
   @keyframes vv {
     0% {
@@ -2322,22 +1916,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .aboutcontent.animate .aboutimg {
-    -webkit-animation: vvv 1s 0.5s ease-in forwards;
-            animation: vvv 1s 0.5s ease-in forwards;
-  }
-  @-webkit-keyframes vvv {
-    0% {
-      opacity: 1;
-      transform: translatey(600px);
-    }
-    50% {
-      opacity: 1;
-      transform: translatey(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: vvv 1s 0.5s ease-in forwards;
   }
   @keyframes vvv {
     0% {
@@ -2354,16 +1933,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .aboutPage .aboutcontent.animate .aboutcontent-2, body main .aboutPage .aboutcontent.animate .aboutcontent-2 {
-    -webkit-animation: fadeIn 2s 1s ease-in forwards;
-            animation: fadeIn 2s 1s ease-in forwards;
-  }
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: fadeIn 2s 1s ease-in forwards;
   }
   @keyframes fadeIn {
     0% {
@@ -2597,22 +2167,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
   }
   html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workcontent-1 {
-    -webkit-animation: qq 2s ease-in forwards;
-            animation: qq 2s ease-in forwards;
-  }
-  @-webkit-keyframes qq {
-    0% {
-      opacity: 1;
-      transform: translateX(-1000px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: qq 2s ease-in forwards;
   }
   @keyframes qq {
     0% {
@@ -2629,22 +2184,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workcontent-2 {
-    -webkit-animation: qqq 2s ease-in forwards;
-            animation: qqq 2s ease-in forwards;
-  }
-  @-webkit-keyframes qqq {
-    0% {
-      opacity: 1;
-      transform: translatey(900px);
-    }
-    50% {
-      opacity: 1;
-      transform: translatey(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: qqq 2s ease-in forwards;
   }
   @keyframes qqq {
     0% {
@@ -2661,19 +2201,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .workPage.animate2 .stargip, body main .workPage.animate2 .stargip {
-    -webkit-animation: qqqq 2s 1.5s ease-in forwards;
-            animation: qqqq 2s 1.5s ease-in forwards;
-  }
-  @-webkit-keyframes qqqq {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: qqqq 2s 1.5s ease-in forwards;
   }
   @keyframes qqqq {
     0% {
@@ -2709,8 +2237,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .workPage .side-titlle2 h2, body main .workPage .side-titlle2 h2 {
     font-size: 250px;
     color: rgba(255, 255, 255, 0.05);
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
   }
   html main .workPage .workcontent, body main .workPage .workcontent {
     width: 90%;
@@ -2877,17 +2404,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0 0 0.5em, 0 0 0.3em;
-    -webkit-animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-            animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-  }
-  @-webkit-keyframes fadein {
-    /* 효과를 동작시간 동안 0 ~ 1까지 */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
   }
   @keyframes fadein {
     /* 효과를 동작시간 동안 0 ~ 1까지 */
@@ -2895,14 +2412,6 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
       opacity: 0;
     }
     to {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes blink-effect {
-    50% {
-      opacity: 0;
-    }
-    100% {
       opacity: 1;
     }
   }
@@ -2933,23 +2442,8 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     /* height: 100%; */
     color: #ffffff;
     overflow: hidden;
-    -webkit-animation: typing 5s 1s steps(31) forwards;
     animation: typing 5s 1s steps(31) forwards;
     opacity: 0;
-  }
-  @-webkit-keyframes typing {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
   }
   @keyframes typing {
     0% {
@@ -2988,16 +2482,13 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .aboutPage .side-titlle h2, body main .aboutPage .side-titlle h2 {
     font-size: 250px;
     color: rgba(255, 255, 255, 0.05);
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
   }
   html main .aboutPage .aboutcontent.active::after, body main .aboutPage .aboutcontent.active::after {
-    -webkit-animation: sdf 1s;
-            animation: sdf 1s;
+    animation: sdf 1s;
   }
   html main .aboutPage .aboutcontent.active .aboutcontent-1, body main .aboutPage .aboutcontent.active .aboutcontent-1 {
-    -webkit-animation: sdf 1s;
-            animation: sdf 1s;
+    animation: sdf 1s;
   }
   html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
     width: 100%;
@@ -3006,22 +2497,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     transition: opacity 2s ease-in-out;
   }
   html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .aboutcontent.animate .aboutTitle {
-    -webkit-animation: vv 1s ease-in forwards;
-            animation: vv 1s ease-in forwards;
-  }
-  @-webkit-keyframes vv {
-    0% {
-      opacity: 1;
-      transform: translateX(-600px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: vv 1s ease-in forwards;
   }
   @keyframes vv {
     0% {
@@ -3038,22 +2514,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .aboutcontent.animate .aboutimg {
-    -webkit-animation: vvv 1s 0.5s ease-in forwards;
-            animation: vvv 1s 0.5s ease-in forwards;
-  }
-  @-webkit-keyframes vvv {
-    0% {
-      opacity: 1;
-      transform: translatey(600px);
-    }
-    50% {
-      opacity: 1;
-      transform: translatey(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: vvv 1s 0.5s ease-in forwards;
   }
   @keyframes vvv {
     0% {
@@ -3070,16 +2531,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .aboutPage .aboutcontent.animate .aboutcontent-2, body main .aboutPage .aboutcontent.animate .aboutcontent-2 {
-    -webkit-animation: fadeIn 2s 1s ease-in forwards;
-            animation: fadeIn 2s 1s ease-in forwards;
-  }
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: fadeIn 2s 1s ease-in forwards;
   }
   @keyframes fadeIn {
     0% {
@@ -3313,22 +2765,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
   }
   html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workcontent-1 {
-    -webkit-animation: qq 2s ease-in forwards;
-            animation: qq 2s ease-in forwards;
-  }
-  @-webkit-keyframes qq {
-    0% {
-      opacity: 1;
-      transform: translateX(-1000px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: qq 2s ease-in forwards;
   }
   @keyframes qq {
     0% {
@@ -3345,22 +2782,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workcontent-2 {
-    -webkit-animation: qqq 2s ease-in forwards;
-            animation: qqq 2s ease-in forwards;
-  }
-  @-webkit-keyframes qqq {
-    0% {
-      opacity: 1;
-      transform: translatey(900px);
-    }
-    50% {
-      opacity: 1;
-      transform: translatey(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: qqq 2s ease-in forwards;
   }
   @keyframes qqq {
     0% {
@@ -3377,19 +2799,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .workPage.animate2 .stargip, body main .workPage.animate2 .stargip {
-    -webkit-animation: qqqq 2s 1.5s ease-in forwards;
-            animation: qqqq 2s 1.5s ease-in forwards;
-  }
-  @-webkit-keyframes qqqq {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: qqqq 2s 1.5s ease-in forwards;
   }
   @keyframes qqqq {
     0% {
@@ -3425,8 +2835,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .workPage .side-titlle2 h2, body main .workPage .side-titlle2 h2 {
     font-size: 250px;
     color: rgba(255, 255, 255, 0.05);
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
   }
   html main .workPage .workcontent, body main .workPage .workcontent {
     width: 90%;
@@ -3593,17 +3002,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     left: 66%;
     transform: translate(-50%, -50%);
     text-shadow: 0 0 0.5em, 0 0 0.3em;
-    -webkit-animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-            animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-  }
-  @-webkit-keyframes fadein {
-    /* 효과를 동작시간 동안 0 ~ 1까지 */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
   }
   @keyframes fadein {
     /* 효과를 동작시간 동안 0 ~ 1까지 */
@@ -3611,14 +3010,6 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
       opacity: 0;
     }
     to {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes blink-effect {
-    50% {
-      opacity: 0;
-    }
-    100% {
       opacity: 1;
     }
   }
@@ -3647,23 +3038,8 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     height: 100%;
     color: #ffffff;
     overflow: hidden;
-    -webkit-animation: typing 5s 1s steps(31) forwards;
-            animation: typing 5s 1s steps(31) forwards;
+    animation: typing 5s 1s steps(31) forwards;
     opacity: 0;
-  }
-  @-webkit-keyframes typing {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
   }
   @keyframes typing {
     0% {
@@ -3701,16 +3077,13 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .aboutPage .side-titlle h2, body main .aboutPage .side-titlle h2 {
     font-size: 210px;
     color: rgba(255, 255, 255, 0.05);
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
   }
   html main .aboutPage .aboutcontent.active::after, body main .aboutPage .aboutcontent.active::after {
-    -webkit-animation: sdf 1s;
-            animation: sdf 1s;
+    animation: sdf 1s;
   }
   html main .aboutPage .aboutcontent.active .aboutcontent-1, body main .aboutPage .aboutcontent.active .aboutcontent-1 {
-    -webkit-animation: sdf 1s;
-            animation: sdf 1s;
+    animation: sdf 1s;
   }
   html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
     width: 100%;
@@ -3719,22 +3092,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     transition: opacity 2s ease-in-out;
   }
   html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .aboutcontent.animate .aboutTitle {
-    -webkit-animation: vv 1s ease-in forwards;
-            animation: vv 1s ease-in forwards;
-  }
-  @-webkit-keyframes vv {
-    0% {
-      opacity: 1;
-      transform: translateX(-600px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: vv 1s ease-in forwards;
   }
   @keyframes vv {
     0% {
@@ -3751,22 +3109,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .aboutcontent.animate .aboutimg {
-    -webkit-animation: vvv 1s 0.5s ease-in forwards;
-            animation: vvv 1s 0.5s ease-in forwards;
-  }
-  @-webkit-keyframes vvv {
-    0% {
-      opacity: 1;
-      transform: translatey(600px);
-    }
-    50% {
-      opacity: 1;
-      transform: translatey(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: vvv 1s 0.5s ease-in forwards;
   }
   @keyframes vvv {
     0% {
@@ -3783,16 +3126,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .aboutPage .aboutcontent.animate .aboutcontent-2, body main .aboutPage .aboutcontent.animate .aboutcontent-2 {
-    -webkit-animation: fadeIn 2s 1s ease-in forwards;
-            animation: fadeIn 2s 1s ease-in forwards;
-  }
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: fadeIn 2s 1s ease-in forwards;
   }
   @keyframes fadeIn {
     0% {
@@ -3810,7 +3144,6 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .aboutPage .aboutcontent .aboutcontent-1, body main .aboutPage .aboutcontent .aboutcontent-1 {
     width: 45%;
     float: left;
-    position: -webkit-sticky;
     position: sticky;
     left: 0;
     top: -50px;
@@ -4020,22 +3353,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
   }
   html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workcontent-1 {
-    -webkit-animation: qq 2s ease-in forwards;
-            animation: qq 2s ease-in forwards;
-  }
-  @-webkit-keyframes qq {
-    0% {
-      opacity: 1;
-      transform: translateX(-1000px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: qq 2s ease-in forwards;
   }
   @keyframes qq {
     0% {
@@ -4052,22 +3370,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workcontent-2 {
-    -webkit-animation: qqq 2s ease-in forwards;
-            animation: qqq 2s ease-in forwards;
-  }
-  @-webkit-keyframes qqq {
-    0% {
-      opacity: 1;
-      transform: translatey(900px);
-    }
-    50% {
-      opacity: 1;
-      transform: translatey(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: qqq 2s ease-in forwards;
   }
   @keyframes qqq {
     0% {
@@ -4084,19 +3387,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .workPage.animate2 .stargip, body main .workPage.animate2 .stargip {
-    -webkit-animation: qqqq 2s 1.5s ease-in forwards;
-            animation: qqqq 2s 1.5s ease-in forwards;
-  }
-  @-webkit-keyframes qqqq {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: qqqq 2s 1.5s ease-in forwards;
   }
   @keyframes qqqq {
     0% {
@@ -4131,8 +3422,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .workPage .side-titlle2 h2, body main .workPage .side-titlle2 h2 {
     font-size: 210px;
     color: rgba(255, 255, 255, 0.05);
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
   }
   html main .workPage .workcontent, body main .workPage .workcontent {
     width: 90%;
@@ -4291,17 +3581,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     left: 66%;
     transform: translate(-50%, -50%);
     text-shadow: 0 0 0.5em, 0 0 0.3em;
-    -webkit-animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-            animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
-  }
-  @-webkit-keyframes fadein {
-    /* 효과를 동작시간 동안 0 ~ 1까지 */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    animation: fadein 3s ease-in, blink-effect 3s 3s ease-in infinite;
   }
   @keyframes fadein {
     /* 효과를 동작시간 동안 0 ~ 1까지 */
@@ -4309,14 +3589,6 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
       opacity: 0;
     }
     to {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes blink-effect {
-    50% {
-      opacity: 0;
-    }
-    100% {
       opacity: 1;
     }
   }
@@ -4345,23 +3617,8 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     height: 100%;
     color: #ffffff;
     overflow: hidden;
-    -webkit-animation: typing 5s 1s steps(31) forwards;
-            animation: typing 5s 1s steps(31) forwards;
+    animation: typing 5s 1s steps(31) forwards;
     opacity: 0;
-  }
-  @-webkit-keyframes typing {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
   }
   @keyframes typing {
     0% {
@@ -4399,16 +3656,13 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .aboutPage .side-titlle h2, body main .aboutPage .side-titlle h2 {
     font-size: 210px;
     color: rgba(255, 255, 255, 0.05);
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
   }
   html main .aboutPage .aboutcontent.active::after, body main .aboutPage .aboutcontent.active::after {
-    -webkit-animation: sdf 1s;
-            animation: sdf 1s;
+    animation: sdf 1s;
   }
   html main .aboutPage .aboutcontent.active .aboutcontent-1, body main .aboutPage .aboutcontent.active .aboutcontent-1 {
-    -webkit-animation: sdf 1s;
-            animation: sdf 1s;
+    animation: sdf 1s;
   }
   html main .aboutPage .aboutcontent, body main .aboutPage .aboutcontent {
     width: 100%;
@@ -4417,22 +3671,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     transition: opacity 2s ease-in-out;
   }
   html main .aboutPage .aboutcontent.animate .aboutTitle, body main .aboutPage .aboutcontent.animate .aboutTitle {
-    -webkit-animation: vv 1s ease-in forwards;
-            animation: vv 1s ease-in forwards;
-  }
-  @-webkit-keyframes vv {
-    0% {
-      opacity: 1;
-      transform: translateX(-600px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: vv 1s ease-in forwards;
   }
   @keyframes vv {
     0% {
@@ -4449,22 +3688,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .aboutPage .aboutcontent.animate .aboutimg, body main .aboutPage .aboutcontent.animate .aboutimg {
-    -webkit-animation: vvv 1s 0.5s ease-in forwards;
-            animation: vvv 1s 0.5s ease-in forwards;
-  }
-  @-webkit-keyframes vvv {
-    0% {
-      opacity: 1;
-      transform: translatey(600px);
-    }
-    50% {
-      opacity: 1;
-      transform: translatey(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: vvv 1s 0.5s ease-in forwards;
   }
   @keyframes vvv {
     0% {
@@ -4481,16 +3705,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .aboutPage .aboutcontent.animate .aboutcontent-2, body main .aboutPage .aboutcontent.animate .aboutcontent-2 {
-    -webkit-animation: fadeIn 2s 1s ease-in forwards;
-            animation: fadeIn 2s 1s ease-in forwards;
-  }
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: fadeIn 2s 1s ease-in forwards;
   }
   @keyframes fadeIn {
     0% {
@@ -4508,7 +3723,6 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .aboutPage .aboutcontent .aboutcontent-1, body main .aboutPage .aboutcontent .aboutcontent-1 {
     width: 45%;
     float: left;
-    position: -webkit-sticky;
     position: sticky;
     left: 0;
     top: -50px;
@@ -4718,22 +3932,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     opacity: 1; /* 애니메이션을 위해 처음에는 숨겨둡니다 */
   }
   html main .workPage.animate2 .workcontent-1, body main .workPage.animate2 .workcontent-1 {
-    -webkit-animation: qq 2s ease-in forwards;
-            animation: qq 2s ease-in forwards;
-  }
-  @-webkit-keyframes qq {
-    0% {
-      opacity: 1;
-      transform: translateX(-1000px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: qq 2s ease-in forwards;
   }
   @keyframes qq {
     0% {
@@ -4750,22 +3949,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .workPage.animate2 .workcontent-2, body main .workPage.animate2 .workcontent-2 {
-    -webkit-animation: qqq 2s ease-in forwards;
-            animation: qqq 2s ease-in forwards;
-  }
-  @-webkit-keyframes qqq {
-    0% {
-      opacity: 1;
-      transform: translatey(900px);
-    }
-    50% {
-      opacity: 1;
-      transform: translatey(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    animation: qqq 2s ease-in forwards;
   }
   @keyframes qqq {
     0% {
@@ -4782,19 +3966,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
     }
   }
   html main .workPage.animate2 .stargip, body main .workPage.animate2 .stargip {
-    -webkit-animation: qqqq 2s 1.5s ease-in forwards;
-            animation: qqqq 2s 1.5s ease-in forwards;
-  }
-  @-webkit-keyframes qqqq {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: qqqq 2s 1.5s ease-in forwards;
   }
   @keyframes qqqq {
     0% {
@@ -4829,8 +4001,7 @@ html main .workPage .center-bar2 .bar2, body main .workPage .center-bar2 .bar2 {
   html main .workPage .side-titlle2 h2, body main .workPage .side-titlle2 h2 {
     font-size: 210px;
     color: rgba(255, 255, 255, 0.05);
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
   }
   html main .workPage .workcontent, body main .workPage .workcontent {
     width: 90%;

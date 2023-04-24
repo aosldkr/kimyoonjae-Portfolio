@@ -112,22 +112,7 @@ header .header-logo .mainMenu .menu1:hover:before {
   opacity: 1;
   transform: translate(0);
   border-bottom: 2px solid #F0F2F0;
-  -webkit-animation: aa 0.8s ease-in forwards;
-          animation: aa 0.8s ease-in forwards;
-}
-@-webkit-keyframes aa {
-  0% {
-    opacity: 1;
-    width: 0%;
-  }
-  50% {
-    opacity: 1;
-    width: 100%;
-  }
-  100% {
-    opacity: 1;
-    width: 100%;
-  }
+  animation: aa 0.8s ease-in forwards;
 }
 @keyframes aa {
   0% {
@@ -167,22 +152,7 @@ header .header-logo .mainMenu .menu2:hover:before {
   opacity: 1;
   transform: translate(0);
   border-bottom: 2px solid #F0F2F0;
-  -webkit-animation: aaa 0.8s ease-in forwards;
-          animation: aaa 0.8s ease-in forwards;
-}
-@-webkit-keyframes aaa {
-  0% {
-    opacity: 1;
-    width: 0%;
-  }
-  50% {
-    opacity: 1;
-    width: 100%;
-  }
-  100% {
-    opacity: 1;
-    width: 100%;
-  }
+  animation: aaa 0.8s ease-in forwards;
 }
 @keyframes aaa {
   0% {
@@ -275,22 +245,7 @@ header .header-logo .mainMenu .menu2:hover:before {
     opacity: 1;
     transform: translate(0);
     border-bottom: none;
-    -webkit-animation: aa 0.8s ease-in forwards;
-            animation: aa 0.8s ease-in forwards;
-  }
-  @-webkit-keyframes aa {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
+    animation: aa 0.8s ease-in forwards;
   }
   @keyframes aa {
     0% {
@@ -330,22 +285,7 @@ header .header-logo .mainMenu .menu2:hover:before {
     opacity: 1;
     transform: translate(0);
     border-bottom: none;
-    -webkit-animation: aaa 0.8s ease-in forwards;
-            animation: aaa 0.8s ease-in forwards;
-  }
-  @-webkit-keyframes aaa {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
+    animation: aaa 0.8s ease-in forwards;
   }
   @keyframes aaa {
     0% {
@@ -438,22 +378,7 @@ header .header-logo .mainMenu .menu2:hover:before {
     opacity: 1;
     transform: translate(0);
     border-bottom: none;
-    -webkit-animation: aa 0.8s ease-in forwards;
-            animation: aa 0.8s ease-in forwards;
-  }
-  @-webkit-keyframes aa {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
+    animation: aa 0.8s ease-in forwards;
   }
   @keyframes aa {
     0% {
@@ -493,22 +418,7 @@ header .header-logo .mainMenu .menu2:hover:before {
     opacity: 1;
     transform: translate(0);
     border-bottom: none;
-    -webkit-animation: aaa 0.8s ease-in forwards;
-            animation: aaa 0.8s ease-in forwards;
-  }
-  @-webkit-keyframes aaa {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
+    animation: aaa 0.8s ease-in forwards;
   }
   @keyframes aaa {
     0% {
@@ -601,22 +511,7 @@ header .header-logo .mainMenu .menu2:hover:before {
     opacity: 1;
     transform: translate(0);
     border-bottom: none;
-    -webkit-animation: aa 0.8s ease-in forwards;
-            animation: aa 0.8s ease-in forwards;
-  }
-  @-webkit-keyframes aa {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
+    animation: aa 0.8s ease-in forwards;
   }
   @keyframes aa {
     0% {
@@ -656,22 +551,7 @@ header .header-logo .mainMenu .menu2:hover:before {
     opacity: 1;
     transform: translate(0);
     border-bottom: none;
-    -webkit-animation: aaa 0.8s ease-in forwards;
-            animation: aaa 0.8s ease-in forwards;
-  }
-  @-webkit-keyframes aaa {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
+    animation: aaa 0.8s ease-in forwards;
   }
   @keyframes aaa {
     0% {
@@ -764,22 +644,7 @@ header .header-logo .mainMenu .menu2:hover:before {
     opacity: 1;
     transform: translate(0);
     border-bottom: none;
-    -webkit-animation: aa 0.8s ease-in forwards;
-            animation: aa 0.8s ease-in forwards;
-  }
-  @-webkit-keyframes aa {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
+    animation: aa 0.8s ease-in forwards;
   }
   @keyframes aa {
     0% {
@@ -819,22 +684,7 @@ header .header-logo .mainMenu .menu2:hover:before {
     opacity: 1;
     transform: translate(0);
     border-bottom: none;
-    -webkit-animation: aaa 0.8s ease-in forwards;
-            animation: aaa 0.8s ease-in forwards;
-  }
-  @-webkit-keyframes aaa {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
+    animation: aaa 0.8s ease-in forwards;
   }
   @keyframes aaa {
     0% {
@@ -926,22 +776,7 @@ header .header-logo .mainMenu .menu2:hover:before {
     opacity: 1;
     transform: translate(0);
     border-bottom: 2px solid #F0F2F0;
-    -webkit-animation: aa 0.8s ease-in forwards;
-            animation: aa 0.8s ease-in forwards;
-  }
-  @-webkit-keyframes aa {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
+    animation: aa 0.8s ease-in forwards;
   }
   @keyframes aa {
     0% {
@@ -981,22 +816,7 @@ header .header-logo .mainMenu .menu2:hover:before {
     opacity: 1;
     transform: translate(0);
     border-bottom: 2px solid #F0F2F0;
-    -webkit-animation: aaa 0.8s ease-in forwards;
-            animation: aaa 0.8s ease-in forwards;
-  }
-  @-webkit-keyframes aaa {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
+    animation: aaa 0.8s ease-in forwards;
   }
   @keyframes aaa {
     0% {
@@ -1089,22 +909,7 @@ header .header-logo .mainMenu .menu2:hover:before {
     opacity: 1;
     transform: translate(0);
     border-bottom: none;
-    -webkit-animation: aa 0.8s ease-in forwards;
-            animation: aa 0.8s ease-in forwards;
-  }
-  @-webkit-keyframes aa {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
+    animation: aa 0.8s ease-in forwards;
   }
   @keyframes aa {
     0% {
@@ -1144,22 +949,7 @@ header .header-logo .mainMenu .menu2:hover:before {
     opacity: 1;
     transform: translate(0);
     border-bottom: none;
-    -webkit-animation: aaa 0.8s ease-in forwards;
-            animation: aaa 0.8s ease-in forwards;
-  }
-  @-webkit-keyframes aaa {
-    0% {
-      opacity: 1;
-      width: 0%;
-    }
-    50% {
-      opacity: 1;
-      width: 100%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
+    animation: aaa 0.8s ease-in forwards;
   }
   @keyframes aaa {
     0% {
