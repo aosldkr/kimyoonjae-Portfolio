@@ -38,7 +38,7 @@
         {
             "id": 3,
             "mainTitle":"MOVIE,WEBPAGE",
-            "subTitle":"CREATE NEW WEB(2022.01.26~2022.02.13)",
+            "subTitle":"CREATE NEW WEB(2023.01.26~2023.02.13)",
             "story":"이번 프로젝트는 api통신을 사용해서 데이터를 가져와 만드는 것입니다. 그래서저는 영화 api를 가지고 와서 영화를 소개해주고 검색을 통해서 자신이 원하는 영화에 대한 정보를 알수있는 사이트를 만들었습니다. ",
             "workimg": "./img/workimg03.jpg",
 
@@ -56,7 +56,7 @@
         {
             "id": 4,
             "mainTitle":"CANVAS,WEBPAGE",
-            "subTitle":"CREATE NEW WEB(2022.02.23~2022.03.12)",
+            "subTitle":"CREATE NEW WEB(2023.02.23~2023.03.12)",
             "story":"이번 프로젝트는 명화 검색 및 감상 홈페이지로 사람들이 어는 정도 알수 있는 명화들을 선택하여 제이슨에 데이터를 담아서 뿌려주어 습니다. 클릭을 통해 명화에 대한 세부 내용을 알수 있게 했습니다. 그리고 디자인은 최대한 세런되면서 깔끔한 느낌을 주도록 디자인 하였습니다.",
             "workimg": "./img/workimg04.jpg",
 
